@@ -29,7 +29,7 @@
 }
 
 .navbar #translate-btn:hover{
-  background-color: #b4686e;
+  background-color: #a95d65;
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
@@ -90,7 +90,7 @@ h1 {
 
 /* Botones */
 .btn{
-  background-color: #b4686e;
+  background-color: #a95d65;
   color: white;
   border: none;
   font-size: 1.1rem;
@@ -99,15 +99,15 @@ h1 {
 }
 
 .btn:hover{
-  background-color: #b4686e;
+  background-color: #a95d65;
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .btn:focus {
-  outline: 2px solid #000000;
   outline-offset: 2px;
+  background-color: #a95d65;
   }
 
 /* Seccion Hero */
@@ -202,8 +202,6 @@ h1 {
 #experiencia i {
   padding: 10px;
   color: #c0787f;
-  /* color: #759073; */
-
 }
 
 /*Tarjetas*/
@@ -267,6 +265,10 @@ h1 {
   margin-bottom: 30px;
 }
 
+.accordion a{
+  background-color: #a95d65;
+}
+
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   color: black !important;  /* texto blanco, cámbialo según tu diseño */
@@ -319,7 +321,7 @@ h1 {
   height: 70px;
   margin: 10px;
   border: 2px solid white;  
-  border-radius: 50%;      
+  border-radius: 50%;       
   color: white;           
   font-size: 3rem;       
   transition: all 0.3s ease;
@@ -329,6 +331,12 @@ h1 {
 .iconos-redes-sociales a:hover {
   background-color: white;  
   transform: scale(1.1);  
+}
+
+.iconos-redes-sociales a:focus{
+  border-radius: 50%;      
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
 
 /* Pie de pagina (footer) */
