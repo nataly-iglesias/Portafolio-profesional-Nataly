@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Nataly Iglesias">
+    <meta name="description" content="Nataly Iglesias Web Development Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nataly Iglesias | Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/logo.png" id="logo" width="50" alt="logo">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experience</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="#certificaciones-y-educacion">Certifications & education</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contact</a>
+            </li> 
+          </ul>
+
+          <button id="translate-btn" class="btn btn-outline-light ms-auto" onclick="window.location.href='index.html'" aria-label="Switch to Spanish version">
+            <i class="bi bi-translate"></i>
+            Spanish
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/foto_perfil.png" alt="Nataly's profile picture">
+        <h1>Nataly Iglesias</h1>
+
+        <!--Animation with JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="container">
+        <h2 class="seccion-titulo">¿Who am I?</h2>
+        <p class="seccion-texto">Software Engineering student about to graduate, with knowledge in UI/UX design
+        and Front-end development. Passionate about creating creative and functional interfaces, as well as user-centered
+        design.<br><br> I am looking for internship opportunities where I can apply and strengthen my skills. 
+        I am proactive, eager to learn, and grow professionally.
+        </p>
+      </div>
+    </section>
+
+    <!--Skills-->
+    <section id="habilidades" class="habilidades seccion-clara">
+      <div class="container">
+        <h2 class="seccion-titulo">Skills</h2>
+
+        <div class="container-cards">
+        <div class="card" style="width: 23rem;">
+          <div class="card-body">
+            <h3 class="card-title" style="font-size: 1.5rem;">Cross-Platform Development</h3>
+            <p class="card-text" style="font-size: 1.3rem;">Frameworks and languages focused on web, mobile and cross-platfotm development.</p>
+          </div>
+          
+          <div class="card-body d-flex flex-wrap gap-3 justify-content-center">
+            <i class="devicon-html5-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-css3-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-javascript-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-react-original colored" style="font-size: 3rem;"></i>
+            <i class="devicon-ionic-original colored" style="font-size: 3rem;"></i>
+            <i class="devicon-kotlin-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-python-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-bootstrap-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-tailwindcss-original colored" style="font-size: 3rem;"></i>
+          </div>
+        </div>
+
+        <div class="card" style="width: 23rem;">
+          <div class="card-body">
+            <h3 class="card-title" style="font-size: 1.5rem;">Tools</h3>
+            <p class="card-text" style="font-size: 1.3rem;">Platforms and resources I use.</p>
+          </div>
+          
+          <div class="card-body d-flex flex-wrap gap-3 justify-content-center">
+            <i class="devicon-canva-original" style="font-size: 3rem;"></i>
+            <i class="devicon-figma-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-github-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-vscode-plain colored" style="font-size: 3rem;"></i>
+            <i class="devicon-androidstudio-plain colored" style="font-size: 3rem;"></i>            
+          </div>
+          </div>
+
+        <div class="card" style="width: 23rem;">
+          <div class="card-body">
+            <h3 class="card-title" style="font-size: 1.5rem;">Soft skills</h3>
+            <p class="card-text" style="font-size: 1.3rem;">Interpersonal abilities and traits that define me.</p>
+          </div>
+          <ul class="list-group list-group-flush" style="font-size: 1.3rem;">
+            <li class="list-group-item">Teamwork, leadership.</li>
+            <li class="list-group-item">Responsability, organization</li>
+            <li class="list-group-item">Critical thinking.</li>
+            <li class="list-group-item">Creativity.</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Projects-->
+    <section id="proyectos" class="proyectos seccion-rosa">
+      <div class="container">
+      <h2 class="seccion-titulo">Projects</h2>
+
+       <div id="proyectos-carousel" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+
+          <!--Card 1-->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Project 1 --> 
+               <div class="card card-mobile" style="width: 45rem;">
+                <img class="card-img-top" src="imagenes/proyectos/proyecto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Task managment app</h3>
+                  <p class="card-text text-muted" style="font-size: 1.2rem">Kotlin, XML.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;">Mobile app for university students to help organized
+                  and plan task efficiently.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Role: Mobile designer and developer.</p>;
+                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-tareas" target="_blank" class="btn btn-outline-light float-end">
+                    View project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 2-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Project 2 --> 
+               <div class="card card-mobile" style="width: 45rem;">
+                <img class="card-img-top" src="imagenes/proyectos/proyecto2.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Maintenance tracker app</h3>
+                  <p class="card-text text-muted" style="font-size: 1.2rem">Ionic 7, TypeScript.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;">App to manage household, vehicle, health and pet maintenance
+                   tasks (Web, Android, iOS).</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Role: Mobile designer and developer.</p>;
+                  <a href="https://github.com/WhiteBryz/MantenimientosApp" target="_blank" class="btn btn-outline-light float-end">
+                    View project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 3-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Project 3 --> 
+               <div class="card card-desktop" style="width: 45rem;">
+                <img class="card-img-top" src="imagenes/proyectos/proyecto3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Store managment app</h3>
+                  <p class="card-text text-muted" style="font-size: 1.2rem">Ionic 7, Angular.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;">App for small stores to manage products and clients from any 
+                   device (desktop or mobile).</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Role: Web and mobile developer.</p>;
+                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-gestion-de-tienda/tree/master" target="_blank" class="btn btn-outline-light float-end">
+                    View project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 4-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Project 4 --> 
+               <div class="card card-desktop" style="width: 45rem;">
+                <img class="card-img-top" src="imagenes/proyectos/proyecto4.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Artist website</h3>
+                  <p class="card-text text-muted" style="font-size: 1.2rem">HTML, CSS.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;">Accessible website dedicated to Icelandic-Chinese singer and songwriter Laufey
+                  Lín Bing Jónsdóttir.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Role: Front-end designer and developer.</p>
+                  <a href="https://github.com/nataly-iglesias/Sitio-web-artista" target="_blank" class="btn btn-outline-light float-end">
+                    View project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 5-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Project 5 --> 
+               <div class="card card-desktop" style="width: 45rem;">
+                <img class="card-img-top" src="imagenes/proyectos/proyecto5.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Technical documentation website</h3>
+                  <p class="card-text text-muted" style="font-size: 1.2rem">HTML, CSS.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;">Website providing basic technical documentation on web accessibility, WCAG guidelines, 
+                  and ARIA attributes.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Role: Front-end designer and developer.</p>
+                  <a href="https://github.com/nataly-iglesias/Sitio-Documentacion-tecnica-accesibilidad-web/tree/main" target="_blank" class="btn btn-outline-light float-end">
+                    View project
+                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 6-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Project 6 --> 
+               <div class="card card-desktop" style="width: 45rem;">
+                <img class="card-img-top" src="imagenes/proyectos/proyecto6.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Database management</h3>
+                  <p class="card-text text-muted" style="font-size: 1.2rem">React, TypeScript, JavaScript, Node.js.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;">Local SQL database manager allowing SELECT queries, CRUD operations, and basic syntax 
+                  verification.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Role: Front-end developer.</p>
+                  <a href="https://github.com/dantrixxheron/proyecto-bd" target="_blank" class="btn btn-outline-light float-end">
+                    View project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 7-->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <!-- Project 7 --> 
+               <div class="card card-desktop" style="width: 45rem;">
+                <img class="card-img-top" src="imagenes/proyectos/proyecto7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Dino maze game</h3>
+                  <p class="card-text text-muted" style="font-size: 1.2rem">GDScript, Python.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;">Maze game where you control a small dinosaur using voice commands.</p>
+                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Role: Game designer and developer.</p>
+                  <a href="https://github.com/nataly-iglesias/Dino-Videogame/tree/main" target="_blank" class="btn btn-outline-light float-end">
+                    View project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--Controls-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#proyectos-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#proyectos-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+      </div>
+    </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experiencia" class="experiencia seccion-clara">
+      <div class="container">
+        <h2 class="seccion-titulo">Experience</h2>
+        
+        <div class="experiencia-item d-flex mb-4">
+          <i class="bi bi-laptop me-3" style="font-size: 2.5rem"></i>
+          <div>
+            <h3 style="font-size: 1.5rem">Constitucional social service</h3>
+            <span class="text-muted" style="font-size: 1.2rem">oct.2024 - apr.2025 <br> University of Colima | On-site.</span>
+            <p style="font-size: 1.3rem">Received training in Front-end development (React and Bootstrap 5), Figma layout design, and basic version control 
+            with GitHub. Applied these skills to the layout and maintenance of university institutional system modules, improving their design and usability.</p>
+
+            <a href="https://www.figma.com/proto/lAg40jdy4PpJOVFD2LSGkv/Propuesta-portafolio?node-id=2-144&p=f&t=SVhDVIKC1vlhjdjk-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
+            target="_blank" class="float-end">
+              UDC Portfolio prototype
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+
+            <a href="https://www.figma.com/proto/XkNRICA8siqC5MsHVHr44M/Propuesta-registro---Carrera-FEUC?node-id=2330-96&p=f&t=KbQKghGjE6q8KYY5-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2330%3A96"
+            target="_blank" class="float-end">
+              FEUC Career prototype UDC
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="experiencia-item d-flex mb-4">
+          <i class="bi bi-book me-3" style="font-size: 2.5rem;"></i>
+          <div>
+            <h3 style="font-size: 1.5rem">ADA Proyect</h3>
+            <span class="text-muted" style="font-size: 1.2rem">dec.2024 - present <br> Faculty of Telematic, UDC | Hybrid.</span>
+            <p style="font-size: 1.3rem">Volunteer member responsible for managing the project's social media, creating digital content, and designing 
+            strategies to expand its reach and promote a positive impact within the community.</p>
+            <a href="https://www.instagram.com/proyecto.ada/" target="_blank" class="float-end">
+              ADA Project Instagram
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!--Certifications-->
+    <section id="certificaciones-y-educacion" class="certificaciones seccion-oscura">
+      <div class="container">
+        <h2 class="seccion-titulo">Certifications and education</h2>
+        
+        <h3 style="font-size: 1.5rem">Certification</h3>
+        <div class="accordion" id="certificacionesAccordion">
+          
+          <!-- Certificate 1 -->
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert1" aria-expanded="false" aria-controls="cert1" style="font-size: 1.3rem">
+                <strong>Responsive Web Design (freeCodeCamp)</strong>
+              </button>
+            </h4>
+            <div id="cert1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#certificacionesAccordion">
+              <div class="accordion-body">
+                <p style="font-size: 1.3rem"><i>Issued:</i> aug.2025</p>
+                <p style="font-size: 1.3rem"><i>Description:</i>Certification in responsive web design using HTML and CSS.</p>
+                <div class="d-flex justify-content-end">
+                  <a href="https://www.freecodecamp.org/certification/natiss/responsive-web-design" target="_blank" class="btn btn-outline-light">View certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert2" aria-expanded="false" aria-controls="cert2" style="font-size: 1.3rem">
+                <strong>Leadership (Santander Open Academy)</strong>
+              </button>
+            </h4>
+            <div id="cert2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#certificacionesAccordion">
+              <div class="accordion-body">
+                <p style="font-size: 1.3rem"><i>Issued:</i> aug.2025</p>
+                <p style="font-size: 1.3rem"><i>Description:</i> Training course focused on developing leadership skills.</p>
+                <div class="d-flex justify-content-end">
+                  <a href="https://drive.google.com/file/d/1Edx0CGxpI9THkjkRdQvU4XmKbN3Kec0W/view?usp=drive_link" target="_blank" class="btn btn-outline-light">View certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert3" aria-expanded="false" aria-controls="cert3" style="font-size: 1.3rem">
+                <strong>Front-End Junior Programming (TECNOLOchicas)</strong>
+              </button>
+            </h4>
+            <div id="cert3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#certificacionesAccordion">
+              <div class="accordion-body">
+                <p style="font-size: 1.3rem"><i>Issued:</i> sep.2024</p>
+                <p style="font-size: 1.3rem"><i>Description:</i> Participated in the "Tecnolochicas Pro ¡Codea tu futuro!" program, gaining knowledge in HTML, CSS, JavaScript, and employability skills.</p>
+                <div class="d-flex justify-content-end">
+                  <a href="https://drive.google.com/file/d/1V0_J-M6WOxrTFBDqNioKTfSXE72Kdmav/view?usp=drive_link" target="_blank" class="btn btn-outline-light">View certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert4" aria-expanded="false" aria-controls="cert4" style="font-size: 1.3rem">
+                <strong>Introduction to Emerging Technologies (Emtech & Santander Open Academy)</strong>
+              </button>
+            </h4>
+            <div id="cert4" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#certificacionesAccordion">
+              <div class="accordion-body">
+                <p style="font-size: 1.3rem"><i>Issued:</i> jul.2024</p>
+                <p style="font-size: 1.3rem"><i>Description:</i> Participated in the "Introduction to Emerging Technologies: 2024 Edition" program, acquiring basic knowledge about 
+                artificial intelligence and its applications.</p>
+                <div class="d-flex justify-content-end">
+                  <a href="https://drive.google.com/file/d/1S5w6IVIIeoxmLVh47jwFFAEK2CFiLKtP/view?usp=drive_link" target="_blank" class="btn btn-outline-light">View certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 5 -->
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert5" aria-expanded="false" aria-controls="cert5" style="font-size: 1.3rem">
+                <strong>Personal Development Training (Alura Latam)</strong>
+              </button>
+            </h4>
+            <div id="cert5" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#certificacionesAccordion">
+              <div class="accordion-body">
+                <p style="font-size: 1.3rem"><i>Issued:</i> may.2023</p>
+                <p style="font-size: 1.3rem"><i>Description:</i> Training courses focused on productivity, self-development techniques, focus, and LinkedIn usage.</p>
+                <div class="d-flex justify-content-end">
+                  <a href="https://app.aluracursos.com/degree/certificate/04facc24-8837-4bff-a4c1-b7d060ea7123?lang" target="_blank" class="btn btn-outline-light">View certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="font-size: 1.5rem">Education</h3>
+        <div class="accordion" id="educacionAccordion">
+          
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingEdu1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edu1" aria-expanded="false" aria-controls="edu1" style="font-size: 1.3rem">
+                <strong>Software Engineering (UDC)</strong>
+              </button>
+            </h4>
+            <div id="edu1" class="accordion-collapse collapse" aria-labelledby="headingEdu1" data-bs-parent="#educacionAccordion">
+              <div class="accordion-body">
+                <p style="font-size: 1.3rem"><i>Period:</i> aug.2022 - expected graduation 2026</p>
+                <p style="font-size: 1.3rem"><i>Institution:</i> Faculty of Telematic, University of Colima.</p>
+                <p style="font-size: 1.3em;"><i>Description:</i> Degree in Software Engineering with a focus on Front-end development and UI/UX design.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="rectangulo text-center">
+          <h2 class="seccion-titulo mb-3">¡Contact me!</h2>
+          <div class="iconos-redes-sociales">
+            <a href="https://github.com/nataly-iglesias" target="_blank" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nataly-iglesias" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:fernandanataly0706@gmail.com" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="" aria-label="Currículum">
+              <i class="bi bi-file-earmark-person-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Pie de página-->
+    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/logo.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">From your mind to reality, from the invisible to the visible.</p>
+      <p class="footer-texto text-muted" style="font-size: 1.2rem">Nataly Iglesias</p>
+    </footer>
+    
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

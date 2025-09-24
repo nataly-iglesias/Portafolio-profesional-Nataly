@@ -1,0 +1,387 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+
+.navbar li:hover{
+  /* background-color: #232E211C; */
+  background-color: #f3e3e4;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.navbar #logo {
+  height: 80px;
+  width: 80px;
+}
+
+.navbar #translate-btn {
+  font-size: 1rem;    
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+}
+
+.navbar #translate-btn:hover{
+  background-color: #b4686e;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Estilos generales */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Anek Devanagari'
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #262628;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-rosa {
+  color: white;
+  /* background-color: #759073; */
+  background-color: #c0787f;
+}
+
+.seccion-clara h2{
+   color: #c0787f;
+  /* color: #759073; */
+}
+
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Anek Devanagari';
+}
+
+.seccion-descripcion {
+  font-size: 1.5rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+/* Botones */
+.btn{
+  background-color: #b4686e;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #b4686e;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+  }
+
+/* Seccion Hero */
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+/* Sobre mi */
+#sobre-mi {
+  min-height: 500px;
+  padding: 3rem;
+}
+
+#sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Habilidades */
+#habilidades {
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Proyectos */
+#proyectos {
+  padding: 3rem;
+  text-align: justify;
+}
+
+.carousel-item {
+  transition: transform 0.8s ease-in-out; /* transición más suave */
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+  }
+
+/*Experiencia*/
+#experiencia {
+  padding: 3rem;
+  text-align: left;
+}
+
+.experiencia-item{
+  padding: 15px;
+}
+.experiencia-item:hover{
+  background-color: #232E211C;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#experiencia a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration: underline;
+  color: #c0787f;
+  transition: all 0.3s ease;
+}
+
+#experiencia a:hover {
+  transform: translateY(-3px);
+}
+
+#experiencia p {
+  text-align: justify;
+}
+
+#experiencia i {
+  padding: 10px;
+  color: #c0787f;
+  /* color: #759073; */
+
+}
+
+/*Tarjetas*/
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #5756564d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 8px 0px #0000001a;
+  transition: all 0.2s ease-in;
+}
+
+.card-body i {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.card-body i:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+.card-mobile {
+  max-width: 450px;
+}
+
+.card-mobile img {
+  max-width: 170px;
+  height: 350px;
+  border: 3px solid #5756564d;
+  border-radius: 8px;
+}
+
+.card-desktop {
+  max-width: 800px;
+}
+
+.card-desktop img{
+  max-width: 650px;  
+  height: 330px;
+  border: 3px solid #5756564d;
+  border-radius: 8px;
+}
+
+/*Certificaciones y educación*/
+#certificaciones-y-educacion {
+  padding: 3rem;
+  text-align: left;
+}
+
+.accordion{
+  margin-bottom: 30px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: black !important;  /* texto blanco, cámbialo según tu diseño */
+  box-shadow: none !important; /* quita el borde brillante */
+}
+
+/* Contacto */
+.contacto .container {
+  max-width: 1100px;
+  height: 170px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.contacto .rectangulo {
+  background-color: #c0787f;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+  margin: 0px auto 0 auto; 
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.iconos-redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.iconos-redes-sociales i{
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.iconos-redes-sociales i:hover {
+  color: #c0787f;        
+  transform: scale(1.2);
+}
+
+.iconos-redes-sociales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;            
+  height: 70px;
+  margin: 10px;
+  border: 2px solid white;  
+  border-radius: 50%;      
+  color: white;           
+  font-size: 3rem;       
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;  
+  transform: scale(1.1);  
+}
+
+/* Pie de pagina (footer) */
+footer {
+  min-height: 500px;
+  padding-top: 80px;
+}
+
+.footer-logo {
+  height: 200px;
+  width: 200px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .iconos-redes-sociales i {
+  font-size: 1.3rem;
+  padding: 10px;
+  }
+
+  .iconos-redes-sociales a {
+    width: 40px;            
+    height: 40px;
+    font-size: 2rem;       
+  }
+
+  .card-mobile img {
+  max-width: 100px;
+  height: 200px;
+  }
+  .card-desktop img{
+  height: 150px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+
