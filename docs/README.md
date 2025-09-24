@@ -13,4 +13,4 @@ El texto de la página web se encuentra disponible tanto en español como en ing
 
 ## Visualización
 
-Disponible en: [Portafolio personal](https://nataly-iglesias.github.io/Portafolio-profesional/)
+Disponible en: [Portafolio profesional](https://nataly-iglesias.github.io/Portafolio-profesional-Nataly/)
