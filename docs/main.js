@@ -7,9 +7,7 @@ let typewriter = new Typewriter(app, {
  
 // Animación: Maquina de escribir
 typewriter
-  .pauseFor(2500)
+  .pauseFor(1700)
   .typeString('<span style="color: #666a87;">Front-end Developer and UI/UX Designer</span>')
   .pauseFor(200)
   .start();
-
-

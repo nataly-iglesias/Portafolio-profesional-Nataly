@@ -5,6 +5,8 @@ Portafolio profesional donde muestro mis proyectos, habilidades y experiencia en
 Esta página web fue creada y personalizada con:
 * HTML, CSS y JavaScript 
 * Bootstrap 5
+* Librería Animate.css
+* Librería AOS
 * Google Fonts
 * Devicon Icons
 

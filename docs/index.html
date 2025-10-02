@@ -22,6 +22,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+   <!--Librería Animate.css-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!--Libería AOS--> 
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -77,12 +82,13 @@
 
     <!-- Sobre mi -->
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h2 class="seccion-titulo">¿Quién soy?</h2>
         <p class="seccion-texto">Estudiante de Ingeniería de Software próxima a egresar, con conocimientos en diseño UI/UX
-          y desarrollo Front-end. Apasionada por la creación de interfaces creativas y funcionales, así como diseño centrado
-          en el usuario.<br><br> Busco oportunidades de prácticas profesionales donde pueda aplicar y fortalecer mis habilidades. 
-          Soy proactiva, con gran disposición de aprender y crecer profesionalmente.</p>
+          y desarrollo front-end. Apasionada por la creación de interfaces intuitivas y centradas en el usuario, que combinan
+          tanto funcionalidad como estética.<br><br> En búsqueda de oportunidades de prácticas profesionales para aplicar y 
+          fortalecer conocimientos, crecer profesionalmente y contribuir a proyectos innovadores. 
+          Soy proactiva, con gran disposición de aprender y me adapto con facilidad.</p>
         </p>
       </div>
     </section>
@@ -93,7 +99,7 @@
         <h2 class="seccion-titulo">Habilidades</h2>
 
         <div class="container-cards">
-        <div class="card" style="width: 23rem;">
+        <div class="card" data-aos="fade-up" style="width: 23rem;">
           <div class="card-body">
             <h3 class="card-title" style="font-size: 1.5rem;">Desarrollo multiplataforma</h3>
             <p class="card-text" style="font-size: 1.3rem;">Frameworks y lenguajes enfocados al desarrollo web, móvil y múltiplataforma.</p>
@@ -112,7 +118,7 @@
           </div>
         </div>
 
-        <div class="card" style="width: 23rem;">
+        <div class="card" data-aos="fade-up" style="width: 23rem;">
           <div class="card-body">
             <h3 class="card-title" style="font-size: 1.5rem;">Herramientas</h3>
             <p class="card-text" style="font-size: 1.3rem;">Plataformas y recursos que utilizo.</p>
@@ -127,7 +133,7 @@
           </div>
         </div>
 
-        <div class="card" style="width: 23rem;">
+        <div class="card" data-aos="fade-up" style="width: 23rem;">
           <div class="card-body">
             <h3 class="card-title" style="font-size: 1.5rem;">Soft skills</h3>
             <p class="card-text" style="font-size: 1.3rem;">Habilidades interpersonales y aptitudes que me definen.</p>
@@ -302,14 +308,18 @@
       <div class="container">
         <h2 class="seccion-titulo">Experiencia</h2>
         
-        <div class="experiencia-item d-flex mb-4">
+        <div class="experiencia-item d-flex mb-4" data-aos="fade-up">
           <i class="bi bi-laptop me-3" style="font-size: 2.5rem"></i>
           <div>
             <h3 style="font-size: 1.5rem">Servicio social constitucional</h3>
             <span class="text-muted" style="font-size: 1.2rem">oct.2024 - abr.2025 <br> Universidad de Colima | Presencial.</span>
-            <p style="font-size: 1.3rem">Recibió capacitación en desarrollo Front-end (React y Bootstrap 5), maquetación en Figma
-            y control de versiones básico con GitHub, aplicando estos conocimientos en el maquetado y mantenimiento de módulos de
-            sistemas institucionales de la universidad, mejorando su diseño y usabilidad.</p>
+            <p style="font-size: 1.3rem">
+            <ul style="font-size: 1.3rem; text-align: justify;">
+              <li>Capacitación en herramientas de desarrollo Front-end, incluyendo React y Bootstrap 5, así como control de versiones básico con GitHub.</li> 
+              <li>Diseño y propuesta de mejoras para los módulos institucionales utilizando Figma, con enfoque en la usabilidad y consistencia visual.</li> 
+              <li>Contribución a la mejora de la experiencia del usuario mediante la creación de alternativas de diseño intuitivas.</li>
+            </ul>
+            </p>
 
             <a href="https://www.figma.com/proto/lAg40jdy4PpJOVFD2LSGkv/Propuesta-portafolio?node-id=2-144&p=f&t=SVhDVIKC1vlhjdjk-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
             target="_blank" class="float-end">
@@ -325,7 +335,7 @@
           </div>
         </div>
 
-        <div class="experiencia-item d-flex mb-4">
+        <div class="experiencia-item d-flex mb-4" data-aos="fade-up">
           <i class="bi bi-book me-3" style="font-size: 2.5rem;"></i>
           <div>
             <h3 style="font-size: 1.5rem">Proyecto ADA</h3>
@@ -359,7 +369,7 @@
               </button>
             </h4>
             <div id="cert1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body">
+              <div class="accordion-body animate__animated animate__fadeIn">
                 <p style="font-size: 1.3rem"><i>Expedición:</i> ago.2025</p>
                 <p style="font-size: 1.3rem"><i>Descripción:</i> Certificación en diseño web responsivo utilizando HTML y CSS.</p>
                 <div class="d-flex justify-content-end">
@@ -377,7 +387,7 @@
               </button>
             </h4>
             <div id="cert2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body">
+              <div class="accordion-body animate__animated animate__fadeIn">
                 <p style="font-size: 1.3rem"><i>Expedición:</i> ago.2025</p>
                 <p style="font-size: 1.3rem"><i>Descripción:</i> Curso de capacitación orientado al desarrollo de habilidades de liderazgo.</p>
                 <div class="d-flex justify-content-end">
@@ -395,7 +405,7 @@
               </button>
             </h4>
             <div id="cert3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body">
+              <div class="accordion-body animate__animated animate__fadeIn">
                 <p style="font-size: 1.3rem"><i>Expedición:</i> sep.2024</p>
                 <p style="font-size: 1.3rem"><i>Descripción:</i> Participación en el programa "Tecnolochicas Pro ¡Codea tu futuro!", donde se adquirieron conocimientos
                 en HTML, CSS, JavaScript y habilidades para la empleabilidad.</p>
@@ -414,7 +424,7 @@
               </button>
             </h4>
             <div id="cert4" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body">
+              <div class="accordion-body animate__animated animate__fadeIn">
                 <p style="font-size: 1.3rem"><i>Expedición:</i> jul.2024</p>
                 <p style="font-size: 1.3rem"><i>Descripción:</i> Participación en el programa "Introducción a las Tecnologías Emergentes: Edición 2024", donde se 
                 adquirieron conocimientos básicos sobre inteligencia artificial y sus diversas aplicaciones.</p>
@@ -433,7 +443,7 @@
               </button>
             </h4>
             <div id="cert5" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body">
+              <div class="accordion-body animate__animated animate__fadeIn">
                 <p style="font-size: 1.3rem"><i>Expedición:</i> may.2023</p>
                 <p style="font-size: 1.3rem"><i>Descripción:</i> Cursos de capacitación enfocados en el desarrollo de habilidades relacionadas con la productividad,
                 técnicas de autodesarrollo, enfoque y uso de LinkedIn.</p>
@@ -455,7 +465,7 @@
               </button>
             </h4>
             <div id="edu1" class="accordion-collapse collapse" aria-labelledby="headingEdu1" data-bs-parent="#educacionAccordion">
-              <div class="accordion-body">
+              <div class="accordion-body animate__animated animate__fadeIn">
                 <p style="font-size: 1.3rem"><i>Periodo:</i> ago.2022 - próxima a engresar en 2026</p>
                 <p style="font-size: 1.3rem"><i>Institución:</i> Facultad de Telemática, Universidad de Colima.</p>
                 <p style="font-size: 1.3em;"><i>Descripción:</i> Grado en ingeniería de software, con enfoque hacia desarrollo front-end y diseño UI/UX.</p>
@@ -470,7 +480,7 @@
       <div class="container">
         <div class="rectangulo text-center">
           <h2 class="seccion-titulo mb-3">¡Contáctame!</h2>
-          <div class="iconos-redes-sociales">
+          <div class="iconos-redes-sociales" data-aos="fade-up">
             <a href="https://github.com/nataly-iglesias" target="_blank" aria-label="GitHub">
               <i class="bi bi-github"></i>
             </a>
@@ -480,7 +490,7 @@
             <a href="mailto:fernandanataly0706@gmail.com" aria-label="Correo electrónico">
               <i class="bi bi-envelope-fill"></i>
             </a>
-            <a href="https://drive.google.com/file/d/1Lx6sCSXEeJu8qH-QS9zJdQ4Vd9mFfkwQ/view?usp=drive_link" target="_blank" aria-label="Currículum">
+            <a href="https://drive.google.com/file/d/1HnrDjIyrTDXUIXMuKvB3-pNj_cWZ3MSm/view?usp=sharing" target="_blank" aria-label="Currículum">
               <i class="bi bi-file-earmark-person-fill"></i>
             </a>
           </div>
@@ -499,6 +509,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!--Librería AOS-->
+    <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+    </script> 
 
   </body>
 </html>
