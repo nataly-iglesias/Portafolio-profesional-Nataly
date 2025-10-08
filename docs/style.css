@@ -346,6 +346,8 @@ footer {
 }
 
 .footer-logo {
+  margin-top: 70px;
+  padding: 20px;
   height: 200px;
   width: 200px;
 }
