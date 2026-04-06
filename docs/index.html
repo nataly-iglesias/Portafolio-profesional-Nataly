@@ -10,14 +10,14 @@
     <title>Nataly Iglesias | Portafolio</title>
 
     <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- CSS -->
+    <link href="styles/style.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- Iconos de Devicon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <!-- CSS -->
-    <link href="style.css" rel="stylesheet">
+    <!--Iconos Tabler-->
+   <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
     <!-- Google Fonts-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +26,13 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    <!--Libería AOS--> 
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   </head>
 
   <body>
     <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-body-tertiary">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
@@ -54,14 +53,14 @@
               <a class="nav-link" href="#experiencia">Experiencia</a>
             </li>  
             <li class="nav-item">
-              <a class="nav-link" href="#certificaciones-y-educacion">Certificaciones y educación</a>
+              <a class="nav-link" href="#certificaciones-y-educacion">Educación</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li> 
           </ul>
 
-          <button id="translate-btn" class="btn btn-dark ms-auto" onclick="window.location.href='version-english.html'" aria-label="Cambiar a versión en Inglés">
+          <button id="translate-btn" class="btn btn-dark ms-auto" onclick="window.location.href='#'" aria-label="Cambiar a versión en Inglés">
             <i class="bi bi-translate"></i>
             Inglés
           </button>
@@ -69,27 +68,42 @@
       </div>
     </nav>
 
-    <!-- Seccion Hero -->
-    <section class="hero align-items-stretch">
-      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/foto_perfil.png" alt="Foto de perfil de Nataly">
-        <h1>Nataly Iglesias</h1>
+  <section class="hero">
 
-        <!--Animación con JavaScript-->
-        <h2 class="text-primary mb-4" id="typewriter"></h2>
-      </div>
-    </section>
+  <h1 class="hero-background">PORTFOLIO</h1>
+
+  <div class="hero-content">
+    <img src="imagenes/foto-perfil.png" class="hero-photo" alt="Foto de perfil de Nataly">
+
+    <div class="hero-left">
+      <p>FRONT-END DEVELOPER <br> & UI/UX DESIGNER</p>
+    </div>
+
+    <div class="hero-right">
+      <p>NATALY IGLESIAS</p>
+    </div>
+
+  </div>
+
+</section>
 
     <!-- Sobre mi -->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <section id="sobre-mi" class="sobre-mi seccion-oscura py-5">
       <div class="container" data-aos="fade-up">
-        <h2 class="seccion-titulo">¿Quién soy?</h2>
-        <p class="seccion-texto">Estudiante de Ingeniería de Software próxima a egresar, con conocimientos en diseño UI/UX
-          y desarrollo front-end. Apasionada por la creación de interfaces intuitivas y centradas en el usuario, que combinan
-          tanto funcionalidad como estética.<br><br> En búsqueda de oportunidades de prácticas profesionales para aplicar y 
-          fortalecer conocimientos, crecer profesionalmente y contribuir a proyectos innovadores. 
-          Soy proactiva, con gran disposición de aprender y me adapto con facilidad.</p>
-        </p>
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h2 class="seccion-titulo text-md-start" style="border-left: 5px solid #a9c195; padding-left: 20px;">
+              Un poco <br> <span class="texto-resaltado">sobre mí</span>
+            </h2>
+          </div>
+          <div class="col-md-8">
+            <p class="seccion-texto">
+              Estudiante de <span class="texto-resaltado">Ingeniería de Software</span> próxima a egresar, con conocimientos en <span class="texto-resaltado">diseño UI/UX</span> y <span class="texto-resaltado">desarrollo front-end</span>. Apasionada por la creación de interfaces que no solo sean visualmente atractivas, sino también intuitivas y centradas en la experiencia del usuario.
+              <br><br>
+              Soy una persona proactiva y con gran disposición a aprender, en busca de nuevos retos que me permitan aplicar mis conocimientos técnicos y creativos para aportar en proyectos innovadores.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -105,17 +119,47 @@
             <p class="card-text" style="font-size: 1.3rem;">Frameworks y lenguajes enfocados al desarrollo web, móvil y múltiplataforma.</p>
           </div>
           
-          <div class="card-body d-flex flex-wrap gap-3 justify-content-center">
-            <i class="devicon-html5-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-css3-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-javascript-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-react-original colored" style="font-size: 3rem;"></i>
-            <i class="devicon-ionic-original colored" style="font-size: 3rem;"></i>
-            <i class="devicon-angularjs-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-kotlin-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-python-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-bootstrap-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-tailwindcss-original colored" style="font-size: 3rem;"></i>
+          <div class="card-body tech-grid d-flex flex-wrap gap-3 justify-content-center">
+            <div class="tech-item">
+              <i class="ti ti-brand-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-css3"></i>
+              <span>CSS</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-javascript"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-react"></i>
+              <span>React</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-playstation-circle"></i>
+              <span>Ionic</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-angular"></i>
+              <span>Angular</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-kotlin"></i>
+              <span>Kotlin</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-python" style="font-size: 3rem;"></i>
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-bootstrap" style="font-size: 3rem;"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div class="tech-item">
+            <i class="ti ti-brand-tailwind" style="font-size: 3rem;"></i>
+              <span>Tailwind</span>
+            </div>
           </div>
         </div>
 
@@ -125,11 +169,27 @@
             <p class="card-text" style="font-size: 1.3rem;">Plataformas y recursos que utilizo.</p>
           </div>
           
-          <div class="card-body d-flex flex-wrap gap-3 justify-content-center">
-            <i class="devicon-figma-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-github-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-vscode-plain colored" style="font-size: 3rem;"></i>
-            <i class="devicon-androidstudio-plain colored" style="font-size: 3rem;"></i>            
+          <div class="card-body tech-grid d-flex flex-wrap gap-3 justify-content-center">
+            <div class="tech-item">
+            <i class="ti ti-brand-figma" style="font-size: 3rem;"></i>
+              <span>Figma</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-sitemap" style="font-size: 3rem;"></i>
+              <span>Lucidchart</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-github" style="font-size: 3rem;"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-vscode" style="font-size: 3rem;"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-android" style="font-size: 3rem;"></i>
+              <span>Android Studio</span>
+            </div>
           </div>
         </div>
 
@@ -138,12 +198,15 @@
             <h3 class="card-title" style="font-size: 1.5rem;">Soft skills</h3>
             <p class="card-text" style="font-size: 1.3rem;">Habilidades interpersonales y aptitudes que me definen.</p>
           </div>
-          <ul class="list-group list-group-flush" style="font-size: 1.3rem;">
-            <li class="list-group-item">Trabajo en equipo, liderazgo.</li>
-            <li class="list-group-item">Responsabilidad, organización</li>
-            <li class="list-group-item">Pensamiento crítico.</li>
-            <li class="list-group-item">Creatividad.</li>
-          </ul>
+          <div class="card-body d-flex flex-wrap justify-content-center gap-2">
+            <span class="skill-badge">Trabajo en equipo</span>
+            <span class="skill-badge">Liderazgo</span>
+            <span class="skill-badge">Responsabilidad</span>
+            <span class="skill-badge">Planificación</span>
+            <span class="skill-badge">Creatividad</span>
+            <span class="skill-badge">Curiosidad</span>
+            <span class="skill-badge">Pensamiento analítico</span>
+          </div>
         </div>
         </div>
         </div>
@@ -151,172 +214,104 @@
     </section>
 
     <!--Proyectos-->
-    <section id="proyectos" class="proyectos seccion-rosa">
+    <section id="proyectos" class="proyectos seccion-verde py-5">
       <div class="container">
-      <h2 class="seccion-titulo">Proyectos</h2>
+        <!-- Fila 1: Desarrollo -->
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-lg-3 mb-4">
+            <h2 class="seccion-titulo text-lg-start sticky-title" style="border-left: 5px solid #ffffff; padding-left: 20px;">
+              Proyectos de <br> Desarrollo
+              <i class="ti ti-code d-block mt-2" style="font-size: 2.5rem; color: #ffffff;"></i>
+            </h2>
+          </div>
 
-       <div id="proyectos-carousel" class="carousel carousel-dark slide">
-        <div class="carousel-inner">
-
-          <!--Tarjeta 1-->
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 1 --> 
-               <div class="card card-mobile" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto1.png" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">App de gestión de tareas</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">Kotlin, XML.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Aplicación móvil para estudiantes
-                  universitarios que facilita la organización y planeación de actividades.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Diseñador y desarrollador móvil.</p>;
-                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-tareas" target="_blank" class="btn btn-dark float-end">
-                    Ver proyecto
-                  </a>
+          <div class="col-lg-9">
+            <div class="proyectos-grid">
+              <div class="card">
+                <img src="imagenes/proyectos/proyecto1.png" alt="App de tareas">
+                <div class="card-body text-center">
+                  <h3 class="card-title">App gestión de tareas</h3>
+                  <p class="card-text text-muted">Kotlin, XML</p>
+                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-tareas" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenes/proyectos/proyecto2.png" alt="App mantenimiento">
+                <div class="card-body text-center">
+                  <h3 class="card-title">App control mantenimientos</h3>
+                  <p class="card-text text-muted">Ionic 7, TypeScript</p>
+                  <a href="https://github.com/WhiteBryz/MantenimientosApp" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenes/proyectos/proyecto3.png" alt="Gestión tienda">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Control de inventario</h3>
+                  <p class="card-text text-muted">Ionic 7, Angular</p>
+                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-gestion-de-tienda/tree/master" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenes/proyectos/proyecto6.png" alt="Gestor BD">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Gestor de bases de datos</h3>
+                  <p class="card-text text-muted">React, TypeScript, Node.js</p>
+                  <a href="https://github.com/dantrixxheron/proyecto-bd" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenes/proyectos/proyecto7.jpg" alt="Dino Laberinto">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Dino laberinto</h3>
+                  <p class="card-text text-muted">GDScript, Python</p>
+                  <a href="https://github.com/nataly-iglesias/Dino-Videogame/tree/main" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!--Tarjeta 2-->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 2 --> 
-               <div class="card card-mobile" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto2.png" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">App de control de mantenimiento</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">Ionic 7, TypeScript.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Aplicación para gestionar tareas de mantenimiento en hogar, vehículos, salud y mascotas (Web, Android, IOS).</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Diseñador y desarrollador móvil.</p>;
-                  <a href="https://github.com/WhiteBryz/MantenimientosApp" target="_blank" class="btn btn-dark float-end">
-                    Ver proyecto
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Tarjeta 3-->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 3 --> 
-               <div class="card card-desktop" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto3.png" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">App de gestión de tienda</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">Ionic 7, Angular.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Aplicación para que tiendas y pequeños negocios 
-                  organicen sus productos y clientes desde cualquier dispositivo (escritorio o móvil).</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Desarrollador web y móvil.</p>;
-                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-gestion-de-tienda/tree/master" target="_blank" class="btn btn-dark float-end">Ver proyecto</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Tarjeta 6-->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 6 --> 
-               <div class="card card-desktop" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto6.png" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Gestor de bases de datos</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">React, TypeScript, JavaScript, Node.js.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Gestor de bases de datos SQL local que permite realizar consultas SELECT, operaciones CRUD y verificación de
-                  sintaxis básica.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Desarrollador front-end.</p>
-                  <a href="https://github.com/dantrixxheron/proyecto-bd" target="_blank" class="btn btn-dark float-end">Ver proyecto</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Tarjeta 4-->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 4 --> 
-               <div class="card card-desktop" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto4.png" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Sitio web de artista</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">HTML, CSS.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Sitio web accesible dedicado a la cantante y compositora
-                  islandesa-china Laufey Lín Bing Jónsdóttir.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Diseñador y desarrollador front-end.</p>
-                  <a href="https://github.com/nataly-iglesias/Sitio-web-artista" target="_blank" class="btn btn-dark float-end">Ver proyecto</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Tarjeta 7-->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 7 --> 
-               <div class="card card-desktop" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto7.jpg" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Dino laberinto</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">GDScript, Python.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Juego de laberinto donde se controla a un pequeño dinosaurio por medio de comandos de voz.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Diseñador y desarrollador de videojuegos.</p>
-                  <a href="https://github.com/nataly-iglesias/Dino-Videogame/tree/main" target="_blank" class="btn btn-dark float-end">Ver proyecto</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Tarjeta 8-->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 8 --> 
-               <div class="card card-desktop" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto8.png" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Prototipo florería</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">Figma.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Proyecto conceptual de tienda de flores en línea, con secciones de arreglos florales, novias, información y contacto.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Diseñador UI/UX.</p>
-                  <a href="https://www.figma.com/proto/ZcuTvmJj1u3PD2znDevtQD/Prototipo---Florer%C3%ADa?node-id=228-124&p=f&t=ai4hysgrigD0Y706-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A2" target="_blank" class="btn btn-dark float-end">Ver prototipo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Tarjeta 9-->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-3">
-              <!-- Proyecto 9 --> 
-               <div class="card card-mobile" style="width: 45rem;">
-                <img class="card-img-top img-responsive" src="imagenes/proyectos/proyecto9.png" alt="Imagen de proyecto representativa">
-                <div class="card-body">
-                  <h3 class="card-title" style="font-size: 1.5rem; color: black;">Prototipo MoneyWise</h3>
-                  <p class="card-text text-muted" style="font-size: 1.2rem">Figma.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;">Rediseño de aplicación de gestión de finanzas personales con una estética minimalista de line art.</p>
-                  <p class="card-text" style="font-size: 1.3rem; color: black;"> - Rol: Diseñador UI/UX.</p>
-                  <a href="https://www.figma.com/proto/JzRbkc1qmKgvOIsOsB8Vw4/Prototipo-de-app-financiera?node-id=2004-562&p=f&t=TPNIQV77sArJWWO4-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2004%3A562" target="_blank" class="btn btn-dark float-end">Ver prototipo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        <!--Controles-->
-        <button class="carousel-control-prev" type="button" data-bs-target="#proyectos-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        
-        <button class="carousel-control-next" type="button" data-bs-target="#proyectos-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      
+        <div class="separador-proyectos"></div>
+
+        <!-- Fila 2: UI/UX -->
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-3 mb-4">
+            <h2 class="seccion-titulo text-lg-start sticky-title" style="border-left: 5px solid #ffffff; padding-left: 20px;">
+              Diseño <br> UI / UX
+              <i class="ti ti-palette d-block mt-2" style="font-size: 2.5rem; color: #ffffff;"></i>
+            </h2>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="proyectos-grid">
+              <div class="card">
+                <img src="imagenes/proyectos/proyectoFloreria/portadaProyecto.png" alt="Raíz y Pétalo">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Raíz y Pétalo</h3>
+                  <p class="card-text text-muted">(Desktop)</p>
+                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalRaizPetalo">Ver detalles</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenes/proyectos/proyectoMoneyWise/portadaProyecto.png" alt="MoneyWise">
+                <div class="card-body text-center">
+                  <h3 class="card-title">MoneyWise</h3>
+                  <p class="card-text text-muted">(Mobile)</p>
+                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalMoneyWise">Ver detalles</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="imagenes/proyectos/proyectoCareBites/portadaProyecto.png" alt="CareBites">
+                <div class="card-body text-center">
+                  <h3 class="card-title">CareBites</h3>
+                  <p class="card-text text-muted">(Mobile)</p>
+                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalCareBites">Ver detalles</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     </section>
 
     <!-- Experiencia -->
@@ -324,146 +319,98 @@
       <div class="container">
         <h2 class="seccion-titulo">Experiencia</h2>
         
-        <div class="experiencia-item d-flex mb-4" data-aos="fade-up">
-          <i class="bi bi-laptop me-3" style="font-size: 2.5rem"></i>
-          <div>
-            <h3 style="font-size: 1.5rem">Servicio social constitucional</h3>
-            <span class="text-muted" style="font-size: 1.2rem">oct.2024 - abr.2025 <br> Universidad de Colima | Presencial.</span>
-            <p style="font-size: 1.3rem">
-            <ul style="font-size: 1.3rem; text-align: justify;">
-              <li>Capacitación en herramientas de desarrollo Front-end, incluyendo React y Bootstrap 5, así como control de versiones básico con GitHub.</li> 
-              <li>Diseño y propuesta de mejoras para los módulos institucionales utilizando Figma, con enfoque en la usabilidad y consistencia visual.</li> 
-              <li>Contribución a la mejora de la experiencia del usuario mediante la creación de alternativas de diseño intuitivas.</li>
-            </ul>
-            </p>
-
-            <a href="https://www.figma.com/proto/lAg40jdy4PpJOVFD2LSGkv/Propuesta-portafolio?node-id=2-144&p=f&t=SVhDVIKC1vlhjdjk-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"
-            target="_blank" class="float-end">
-              Prototipo portafolio UDC
-              <i class="bi bi-box-arrow-up-right"></i>
-            </a>
-
-            <a href="https://www.figma.com/proto/XkNRICA8siqC5MsHVHr44M/Propuesta-registro---Carrera-FEUC?node-id=2330-96&p=f&t=KbQKghGjE6q8KYY5-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2330%3A96"
-            target="_blank" class="float-end">
-              Prototipo carrera FEUC UDC
-              <i class="bi bi-box-arrow-up-right"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="experiencia-item d-flex mb-4" data-aos="fade-up">
-          <i class="bi bi-book me-3" style="font-size: 2.5rem;"></i>
-          <div>
-            <h3 style="font-size: 1.5rem">Proyecto ADA</h3>
-            <span class="text-muted" style="font-size: 1.2rem">dic.2024 - actualidad <br> Facultad de Telemática, UDC | Híbrido.</span>
-            <p style="font-size: 1.3rem">Miembro voluntaria encargada de la gestión de redes sociales del proyecto, creación de
-            contenido digital y diseño de estrategias para ampliar su alcance y promover un impacto positivo en la comunidad.</p>
-            
-            <a href="https://www.instagram.com/proyecto.ada/" target="_blank" class="float-end">
-              Proyecto ADA Instagram
-              <i class="bi bi-box-arrow-up-right"></i>
-            </a>
-          </div>
+        <div class="timeline">
           
+          <!-- Item 1 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-icon">
+              <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-date">Oct. 2024 - Abr. 2025</span>
+              <h3 style="font-size: 1.5rem; font-weight: bold;">Servicio social constitucional</h3>
+              <p class="text-muted mb-3">CENEDIC UDC | Presencial</p>
+              
+              <ul style="font-size: 1.1rem; text-align: justify; padding-left: 1.2rem;">
+                <li>Capacitación en herramientas de desarrollo Front-end, incluyendo <strong>React</strong> y <strong>Bootstrap 5.0</strong>, así como control de versiones básico con <strong>GitHub.</strong></li> 
+                <li>Diseño y propuesta de mejoras para los módulos institucionales utilizando <strong>Figma</strong>, con enfoque en la usabilidad y consistencia visual.</li> 
+                <li>Contribución a la mejora de la experiencia del usuario mediante la creación de alternativas de diseño intuitivas.</li>
+              </ul>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a href="https://www.figma.com/proto/lAg40jdy4PpJOVFD2LSGkv/Propuesta-portafolio?node-id=2-144&p=f&t=SVhDVIKC1vlhjdjk-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
+                  Prototipo portafolio UDC <i class="ti ti-external-link ms-1"></i>
+                </a>
+                <a href="https://www.figma.com/proto/XkNRICA8siqC5MsHVHr44M/Propuesta-registro---Carrera-FEUC?node-id=2330-96&p=f&t=KbQKghGjE6q8KYY5-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2330%3A96" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
+                  Prototipo Carrera FEUC <i class="ti ti-external-link ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-icon">
+              <i class="bi bi-people" style="font-size: 1.5rem;"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-date">Dic. 2024 - Dic. 2025</span>
+              <h3 style="font-size: 1.5rem; font-weight: bold;">Proyecto ADA</h3>
+              <p class="text-muted mb-3">Facultad de Telemática, UDC | Híbrido</p>
+              <p style="font-size: 1.1rem; text-align: justify;">
+                Voluntaria encargada de la gestión de redes sociales y creación de contenido digital, diseñando estrategias para aumentar el alcance del proyecto y fomentar el interés de jóvenes mujeres (14-18 años) en la programación y la tecnología.
+              </p>
+              <div class="d-flex mt-3">
+                <a href="https://www.instagram.com/proyecto.ada/" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
+                  Instagram ADA <i class="ti ti-brand-instagram ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-icon">
+              <i class="bi bi-code-slash" style="font-size: 1.5rem;"></i>
+            </div>
+            <div class="timeline-card">
+              <span class="timeline-date">Ene. 2026 - Actualidad</span>
+              <h3 style="font-size: 1.5rem; font-weight: bold;">Front-end developer & UI designer</h3>
+              <p class="text-muted mb-3">Nattib | Híbrido (Internship)</p>
+              
+              <ul style="font-size: 1.1rem; text-align: justify; padding-left: 1.2rem;">
+                <li>Diseño y desarrollo de interfaces responsivas para una plataforma web de salud enfocada en agilizar los flujos de trabajo de médicos residentes en hospitales públicos.</li>  
+                <li>Trabajo en la implementación de soluciones centradas en el usuario, buscando mejorar la usabilidad y reducir la complejidad de los procesos.</li> 
+                <li class="mt-2">Tecnologías: <strong>React + Vite, Bootstrap 5.3.</strong> / Diseño: <strong>Figma.</strong></li>
+              </ul>
+              <div class="d-flex mt-3">
+                <a href="https://dailhu.com/login" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
+                  Nattib Health <i class="ti ti-stethoscope" ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!--Certificaciones-->
+    <!--Educación-->
     <section id="certificaciones-y-educacion" class="certificaciones seccion-oscura">
       <div class="container">
-        <h2 class="seccion-titulo">Certificaciones y educación</h2>
-        
-        <h3 style="font-size: 1.5rem">Certificaciones</h3>
-        <div class="accordion" id="certificacionesAccordion">
-          
-          <!-- Certificado 1 -->
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert1" aria-expanded="false" aria-controls="cert1" style="font-size: 1.3rem">
-                <strong>Responsive Web Design (freeCodeCamp)</strong>
-              </button>
-            </h4>
-            <div id="cert1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body animate__animated animate__fadeIn">
-                <p style="font-size: 1.3rem"><i>Expedición:</i> ago.2025</p>
-                <p style="font-size: 1.3rem"><i>Descripción:</i> Certificación en diseño web responsivo utilizando HTML y CSS.</p>
-                <div class="d-flex justify-content-end">
-                  <a href="https://www.freecodecamp.org/certification/natiss/responsive-web-design" target="_blank" class="btn btn-dark">Ver certificado</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificado 2 -->
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert2" aria-expanded="false" aria-controls="cert2" style="font-size: 1.3rem">
-                <strong>Liderazgo (Santander Open Academy)</strong>
-              </button>
-            </h4>
-            <div id="cert2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body animate__animated animate__fadeIn">
-                <p style="font-size: 1.3rem"><i>Expedición:</i> ago.2025</p>
-                <p style="font-size: 1.3rem"><i>Descripción:</i> Curso de capacitación orientado al desarrollo de habilidades de liderazgo.</p>
-                <div class="d-flex justify-content-end">
-                  <a href="https://drive.google.com/file/d/1Edx0CGxpI9THkjkRdQvU4XmKbN3Kec0W/view?usp=drive_link" target="_blank" class="btn btn-dark">Ver certificado</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificado 3 -->
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert3" aria-expanded="false" aria-controls="cert3" style="font-size: 1.3rem">
-                <strong>Front-End Junior Programming (TECNOLOchicas)</strong>
-              </button>
-            </h4>
-            <div id="cert3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body animate__animated animate__fadeIn">
-                <p style="font-size: 1.3rem"><i>Expedición:</i> sep.2024</p>
-                <p style="font-size: 1.3rem"><i>Descripción:</i> Participación en el programa "Tecnolochicas Pro ¡Codea tu futuro!", donde se adquirieron conocimientos
-                en HTML, CSS, JavaScript y habilidades para la empleabilidad.</p>
-                <div class="d-flex justify-content-end">
-                  <a href="https://drive.google.com/file/d/1V0_J-M6WOxrTFBDqNioKTfSXE72Kdmav/view?usp=drive_link" target="_blank" class="btn btn-dark">Ver certificado</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificado 4 -->
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert4" aria-expanded="false" aria-controls="cert4" style="font-size: 1.3rem">
-                <strong>Introducción a las Tecnologías Emergentes (Emtech & Santander Open Academy)</strong>
-              </button>
-            </h4>
-            <div id="cert4" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#certificacionesAccordion">
-              <div class="accordion-body animate__animated animate__fadeIn">
-                <p style="font-size: 1.3rem"><i>Expedición:</i> jul.2024</p>
-                <p style="font-size: 1.3rem"><i>Descripción:</i> Participación en el programa "Introducción a las Tecnologías Emergentes: Edición 2024", donde se 
-                adquirieron conocimientos básicos sobre inteligencia artificial y sus diversas aplicaciones.</p>
-                <div class="d-flex justify-content-end">
-                  <a href="https://drive.google.com/file/d/1S5w6IVIIeoxmLVh47jwFFAEK2CFiLKtP/view?usp=drive_link" target="_blank" class="btn btn-dark">Ver certificado</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 style="font-size: 1.5rem">Educación</h3>
+        <h2 class="seccion-titulo">Educación</h2>
+      
         <div class="accordion" id="educacionAccordion">
           
           <div class="accordion-item">
-            <h4 class="accordion-header" id="headingEdu1">
+            <h3 class="accordion-header" id="headingEdu1">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edu1" aria-expanded="false" aria-controls="edu1" style="font-size: 1.3rem">
                 <strong>Ingeniería de Software (UDC)</strong>
               </button>
             </h4>
             <div id="edu1" class="accordion-collapse collapse" aria-labelledby="headingEdu1" data-bs-parent="#educacionAccordion">
               <div class="accordion-body animate__animated animate__fadeIn">
-                <p style="font-size: 1.3rem"><i>Periodo:</i> ago.2022 - próxima a engresar en 2026</p>
+                <p style="font-size: 1.3rem"><i>Periodo:</i> Ago.2022 - Próxima a egresar en 2026</p>
                 <p style="font-size: 1.3rem"><i>Institución:</i> Facultad de Telemática, Universidad de Colima.</p>
                 <p style="font-size: 1.3em;"><i>Descripción:</i> Grado en ingeniería de software, con enfoque hacia desarrollo front-end y diseño UI/UX.</p>
               </div>
@@ -473,38 +420,42 @@
     </section>
 
     <!--Contacto-->
-    <section id="contacto" class="contacto seccion-oscura">
-      <div class="container">
-        <div class="rectangulo text-center">
+    <section id="contacto" class="contacto seccion-oscura py-5">
+      <div class="container text-center" data-aos="fade-up">
+        <div class="rectangulo">
           <h2 class="seccion-titulo mb-3">¡Contáctame!</h2>
-          <div class="iconos-redes-sociales" data-aos="fade-up">
+          <p class="mb-4" style="font-size: 1.2rem;">¿Tienes un proyecto en mente o una idea creativa? <br> Construyámosla juntos.</p>
+          
+          <div class="d-flex justify-content-center flex-wrap gap-4 iconos-redes-sociales mb-4">
             <a href="https://github.com/nataly-iglesias" target="_blank" aria-label="GitHub">
-              <i class="bi bi-github"></i>
+              <i class="ti ti-brand-github" style="font-size: 2.5rem;"></i>
             </a>
             <a href="https://www.linkedin.com/in/nataly-iglesias" target="_blank" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
+              <i class="ti ti-brand-linkedin" style="font-size: 2.5rem;"></i>
             </a>
             <a href="mailto:fernandanataly0706@gmail.com" aria-label="Correo electrónico">
-              <i class="bi bi-envelope-fill"></i>
+              <i class="ti ti-mail" style="font-size: 2.5rem;"></i>
             </a>
-            <a href="https://drive.google.com/file/d/1HnrDjIyrTDXUIXMuKvB3-pNj_cWZ3MSm/view?usp=sharing" target="_blank" aria-label="Currículum">
-              <i class="bi bi-file-earmark-person-fill"></i>
+            <a href="" target="_blank" aria-label="Currículum">
+              <i class="ti ti-file" style="font-size: 2.5rem;"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contenedor para modales dinámicos -->
+    <div id="modal-container"></div>
+
     <!--Pie de página-->
     <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center"> 
-      <img class="footer-logo" src="imagenes/3D_icon.jpeg" alt="Logo del portafolio">
-      <p class="footer-texto text-muted" style="font-size: 1.2rem">Nataly Iglesias</p>
+      <img class="footer-logo" src="imagenes/milo-icon.png" alt="Logo del portafolio">
     </footer>
     
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!--Librería AOS-->

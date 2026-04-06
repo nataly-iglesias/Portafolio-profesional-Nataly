@@ -1,0 +1,92 @@
+.subtitulo-proyectos {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Anek Devanagari';
+  font-weight: bold;
+}
+
+.seccion-texto {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.separador {
+  border: none;
+  height: 1px;
+  background: #484848;
+  margin: 40px 0;
+}
+
+.lista-pro {
+  text-align: left !important;
+  margin-left: 0;
+  padding-left: 1.2rem;
+  display: block;
+  width: 100%;
+  list-style: none; /* Quitamos el punto por defecto */
+  padding-left: 0
+}
+
+.lista-pro li::before {
+  content: "•"; /* O un icono de FontAwesome */
+  color: #53623b; /* El verde que ya usas en el botón */
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: 0;
+}
+
+.modal-footer a{
+  background-color: #53623b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+} 
+
+.modal-footer button {
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.modal-footer a:hover {
+  background-color: #53623b;
+  color: white;
+}
+
+.badge-custom {
+  background-color: transparent;
+  color: #53623b;
+  border: 2px solid #a9c195;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.img-hover-zoom {
+  overflow: hidden; /* Corta lo que sobresalga */
+  border-radius: 12px;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.05); /* Zoom suave */
+}
+
+.img-hero-mobile {
+  padding: 15px;
+  max-height: 400px !important; /* Mayor altura para lucir el formato vertical */
+  background-color: #232e211c;
+  object-fit: contain !important; /* Muestra la imagen completa sin recortar */
+  width: 100%;
+}
