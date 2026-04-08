@@ -1,6 +1,11 @@
 /* Estilos generales */
-html, body, * {
-  cursor: url('../imagenes/cursor-estrella.png') 16 16, auto;
+html,
+body,
+* {
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
+  cursor:
+    url("../imagenes/cursor-estrella.png") 16 16,
+    auto;
 }
 
 section {
@@ -12,7 +17,7 @@ section {
 
 h1 {
   font-size: 2.8rem;
-  font-family: 'Anek Devanagari'
+  font-family: "Anek Devanagari";
 }
 
 .seccion-oscura {
@@ -31,15 +36,15 @@ h1 {
   background: #8f965e;
 }
 
-.seccion-clara h2{
-   color: #53623b;
+.seccion-clara h2 {
+  color: #53623b;
 }
 
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
   text-align: center;
-  font-family: 'Anek Devanagari';
+  font-family: "Anek Devanagari";
   font-weight: bold;
 }
 
@@ -49,15 +54,14 @@ h1 {
 }
 
 .seccion-texto {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.15rem;
   line-height: 1.8;
   text-align: justify;
 }
 
-
 /* Botones */
-.btn{
+.btn {
   background-color: #232323;
   color: white;
   border: none;
@@ -66,25 +70,24 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
   color: white;
   background-color: #232323;
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn:focus {
   outline-offset: 2px;
   background-color: #232323;
-  }
-
+}
 
 /* Barra de navegacion */
 .navbar {
   padding: 2rem;
   font-size: 20px;
-  background-color: rgba(252, 252, 252, 0.85); 
-  backdrop-filter: blur(10px); 
+  background-color: rgba(252, 252, 252, 0.85);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-nav .nav-link {
@@ -105,7 +108,7 @@ h1 {
 
 .navbar-collapse {
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .navbar #logo {
@@ -114,75 +117,73 @@ h1 {
 }
 
 .navbar #translate-btn {
-  font-size: 1rem;    
+  font-size: 1rem;
   padding: 0.25rem 0.75rem;
   text-align: center;
 }
 
-.navbar #translate-btn:hover{
+.navbar #translate-btn:hover {
   background-color: #232323;
   color: white;
   transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Seccion Hero */
-.hero{
-  position:relative;
-  height:90vh;
+.hero {
+  position: relative;
+  height: 90vh;
   margin-top: 100px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#fcfcfc;
-  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fcfcfc;
+  overflow: hidden;
 }
 
-.hero-background{
-  position:absolute;
-  font-size:12vw;
-  font-weight:900;
-  color:#545251;
-  opacity:.25;
-  top:10%;
-  text-align:center;
-  width:100%;
-  letter-spacing:10px;
+.hero-background {
+  position: absolute;
+  font-size: 12vw;
+  font-weight: 900;
+  color: #545251;
+  opacity: 0.25;
+  top: 10%;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 10px;
 }
 
-.hero-content{
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.hero-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5vw;
 }
 
-.hero-photo{
+.hero-photo {
   margin-top: 200px;
-  width:650px;
-  max-width:80vw;
-  z-index:2;
+  width: 650px;
+  max-width: 80vw;
+  z-index: 2;
 }
 
-.hero-left{
-  position:absolute;
-  left:-500px;
-  bottom:60px;
+.hero-left {
+  position: absolute;
+  left: -500px;
+  bottom: 60px;
   text-align: center;
-  font-weight:bold;
-  letter-spacing:2px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.hero-right{
-  position:absolute;
-  right:-500px;
-  bottom:60px;
-  font-weight:bold;
-  letter-spacing:2px;
+.hero-right {
+  position: absolute;
+  right: -500px;
+  bottom: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-
 
 /* Sección: Sobre mi */
 #sobre-mi {
@@ -196,41 +197,40 @@ h1 {
   margin: 0 auto;
 }
 
-
 /* Sección: Habilidades */
 #habilidades {
   padding: 3rem;
   text-align: center;
 }
 
-.tech-grid{
-  display:flex;
-  flex-wrap:wrap;
-  gap:30px;
-  justify-content:center;
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
-.tech-item{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  width:50px;
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
 }
 
-.tech-item i{
-  font-size:3rem;
-  margin-bottom:8px;
-  transition:transform .3s ease;
+.tech-item i {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
 }
 
-.tech-item span{
-  font-size:.9rem;
-  font-weight:500;
+.tech-item span {
+  font-size: 0.9rem;
+  font-weight: 500;
   color: black;
 }
 
-.tech-item:hover i{
-  transform:scale(1.2);
+.tech-item:hover i {
+  transform: scale(1.2);
 }
 
 .skill-badge {
@@ -251,7 +251,6 @@ h1 {
   color: black;
   transform: scale(1.06);
 }
-
 
 /* Sección: Proyectos */
 #proyectos {
@@ -291,11 +290,10 @@ h1 {
 .carousel-control-next:focus {
   outline: 2px solid #000000;
   outline-offset: 2px;
-  }
-
+}
 
 /*Sección: Experiencia*/
-.experiencia h2{
+.experiencia h2 {
   margin-top: 40px;
 }
 
@@ -312,7 +310,7 @@ h1 {
 
 .timeline-icon {
   position: absolute;
-  left: -3rem; 
+  left: -3rem;
   top: 0;
   width: 50px;
   height: 50px;
@@ -331,12 +329,14 @@ h1 {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  border-left: 5px solid #53623b; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #53623b;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.timeline-card a{
+.timeline-card a {
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -344,18 +344,18 @@ h1 {
   color: white;
 }
 
-.timeline-card a:hover{
-    background-color: #53623b;
+.timeline-card a:hover {
+  background-color: #53623b;
 }
 
 .timeline-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-date {
   display: inline-block;
-  background-color: #232E211C;
+  background-color: #232e211c;
   color: #53623b;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
@@ -364,7 +364,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-
 /*Tarjetas*/
 .container-cards {
   display: flex;
@@ -372,9 +371,9 @@ h1 {
   justify-content: center;
 }
 
-.card{
+.card {
   margin-bottom: 1.5rem; /* Espacio inferior en el flujo de columnas */
-  display: block; 
+  display: block;
   width: 100%;
   break-inside: avoid; /* PROPIEDAD CLAVE: Evita que la tarjeta se parta entre columnas */
   -webkit-column-break-inside: avoid; /* Compatibilidad para Safari/Chrome antiguo */
@@ -395,7 +394,9 @@ h1 {
 }
 
 .card-body i {
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
   cursor: pointer;
 }
 
@@ -412,7 +413,7 @@ h1 {
   border-radius: 20px;
 }
 
-.card-body button{
+.card-body button {
   border: none;
   border-radius: 20px;
   font-size: 1rem;
@@ -428,18 +429,17 @@ h1 {
   margin-bottom: 15px;
 }
 
-
 /*Sección: Educación*/
 #certificaciones-y-educacion {
   padding: 3rem;
   text-align: left;
 }
 
-.accordion{
+.accordion {
   margin-bottom: 30px;
 }
 
-.accordion a{
+.accordion a {
   background-color: #a95d65;
 }
 
@@ -448,7 +448,6 @@ h1 {
   color: black !important;
   box-shadow: none !important;
 }
-
 
 /* Sección: Contacto */
 .contacto .container {
@@ -461,8 +460,8 @@ h1 {
   background-color: #8f965e;
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
-  margin: 0px auto 0 auto; 
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  margin: 0px auto 0 auto;
   max-width: 700px;
   position: relative;
   z-index: 2;
@@ -472,18 +471,21 @@ h1 {
 .iconos-redes-sociales {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Asegura que los iconos se envuelvan en varias líneas si no caben */
   margin-top: 20px;
 }
 
-.iconos-redes-sociales i{
-  color: #53623b;  ;
+.iconos-redes-sociales i {
+  color: #53623b;
   font-size: 2rem;
   padding: 20px;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 .iconos-redes-sociales i:hover {
-  color: white;      
+  color: white;
   transform: scale(1.2);
 }
 
@@ -491,28 +493,26 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;            
+  width: 70px;
   height: 70px;
   margin: 10px;
-  border-radius: 50%;       
-  background-color: white;          
-  font-size: 3rem;       
+  border-radius: 50%;
+  background-color: white;
+  font-size: 3rem;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: black; 
-
-  transform: scale(1.1);  
+  background-color: black;
+  transform: scale(1.1);
 }
 
-.iconos-redes-sociales a:focus{
-  border-radius: 50%;      
+.iconos-redes-sociales a:focus {
+  border-radius: 50%;
   outline: 2px solid #000000;
   outline-offset: 2px;
 }
-
 
 /* Sección: Pie de pagina (footer) */
 footer {
@@ -531,24 +531,21 @@ footer {
   font-size: 1.5rem;
   margin-bottom: 30px;
   padding: 10px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-
-
-
-
-
-
-
+/* Adaptable (Responsivo) */
 @media (max-width: 991px) {
-  .proyectos-grid { column-count: 2; }
+  .proyectos-grid {
+    column-count: 2;
+  }
 }
 
 @media (max-width: 767px) {
-  .proyectos-grid { column-count: 1; }
+  .proyectos-grid {
+    column-count: 1;
+  }
 }
-
 
 /* Adaptable (Responsivo) */
 @media screen and (max-width: 767px) {
@@ -563,30 +560,140 @@ footer {
   font-weight: bold;
 }
 
-
 @media screen and (max-width: 800px) {
+  .navbar {
+    padding: 1rem 1.5rem !important; /* Reduce la altura de la barra en móvil */
+  }
+
+  .navbar #translate-btn {
+    margin: 1.5rem auto 1rem auto !important; /* Centra el botón horizontalmente y le da espacio vertical */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
+  }
+
+  .hero {
+    height: auto; /* Permitir que la altura se ajuste al contenido */
+    margin-top: 70px; /* Reducir el margen superior de toda la sección hero */
+  }
+
+  .hero-background {
+    position: absolute;
+    font-size: 12vw;
+    font-weight: 900;
+    color: #545251;
+    opacity: 0.25;
+    top: 5%; /* Ajustar la posición del texto de fondo para que no empuje tanto el contenido */
+    text-align: center;
+    width: 100%;
+    letter-spacing: 10px;
+  }
+
+  /* Ajustes para los títulos de la sección de Proyectos en móviles */
+  .proyectos .seccion-titulo {
+    font-size: 1.8rem; /* Tamaño de fuente más pequeño para móviles */
+    text-align: center !important; /* Asegura que el título esté centrado */
+    border-left: none !important; /* Elimina el borde izquierdo */
+    padding-left: 0 !important; /* Elimina el padding izquierdo */
+  }
+
+  .proyectos .seccion-titulo i {
+    font-size: 2rem !important; /* Ajusta el tamaño del icono */
+    margin-top: 10px !important; /* Ajusta el margen superior del icono */
+    display: block !important; /* Asegura que el icono esté en su propia línea */
+    margin-left: auto; /* Centra el icono */
+    margin-right: auto; /* Centra el icono */
+  }
+
+  .sticky-title {
+    position: static !important; /* Desactiva el comportamiento sticky en móviles */
+    top: auto !important;
+  }
+  .hero-photo {
+    margin-top: 50px; /* Reducido drásticamente para acercar la imagen al texto */
+    width: 300px; /* Ajustado para un mejor tamaño en móvil */
+    max-width: 70vw;
+    z-index: 2;
+  }
+
+  /* Ajustes para la sección de Experiencia en móviles */
+  .timeline {
+    padding-left: 1rem; /* Reduce el padding interno para acercar el contenido */
+    margin-left: 20px; /* Empuja toda la línea de tiempo hacia la derecha para dar espacio al icono */
+  }
+
+  .timeline-icon {
+    left: calc(
+      0px - 1rem
+    ); /* Ajusta la posición para centrar el icono en la línea (40px/2 - 1rem) */
+    width: 40px; /* Reduce el tamaño del icono para móviles */
+    height: 40px; /* Reduce el tamaño del icono para móviles */
+  }
+
+  .timeline-icon i {
+    font-size: 1.2rem !important; /* Ajusta el tamaño de la fuente del icono */
+  }
+
+  .timeline-card {
+    margin-left: 20px;
+    border-radius: 10px;
+    max-width: 270px;
+  }
+
+  .timeline-card h3 {
+    font-size: 1.3rem !important; /* Ajusta el tamaño del título de la tarjeta */
+  }
+
+  .timeline-card p,
+  .timeline-card ul {
+    font-size: 1rem !important; /* Ajusta el tamaño del texto y las listas */
+  }
+
+  .timeline-card .btn {
+    font-size: 0.9rem !important; /* Ajusta el tamaño de los botones */
+    padding: 0.4rem 0.8rem !important;
+  }
+
+  /* Estilos existentes para la tarjeta de contacto */
+  .iconos-redes-sociales {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacto .container {
+    height: 200px;
+  }
+
+  .contacto .rectangulo {
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+
   .iconos-redes-sociales i {
-  font-size: 1.3rem;
-  padding: 10px;
+    font-size: 1rem;
+    padding: 10px;
   }
 
   .iconos-redes-sociales a {
-    width: 40px;            
-    height: 40px;
-    font-size: 2rem;       
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
   }
 
   .card-mobile img {
-  max-width: 100px;
-  height: 200px;
+    max-width: 100px;
+    height: 200px;
   }
-  .card-desktop img{
-  height: 150px;
-  }
-}
 
-@media screen and (min-width: 700px) {
-  .hero-inferior-imagen {
-    max-width: 600px;
+  .card-desktop img {
+    height: 150px;
+  }
+
+  .footer-logo {
+    margin-top: 80px;
+    height: 220px;
+    width: 220px;
   }
 }
