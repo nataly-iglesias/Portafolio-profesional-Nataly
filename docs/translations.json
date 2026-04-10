@@ -1,0 +1,71 @@
+{
+  "nav_about": "About me",
+  "nav_skills": "Skills",
+  "nav_projects": "Projects",
+  "nav_experience": "Experience",
+  "nav_education": "Education",
+  "nav_contact": "Contact",
+  "btn_translate": "Spanish",
+
+  "about_title": "A bit <br> <span class=\"texto-resaltado\">about me</span>",
+  "about_text": "Software engineering student nearing graduation, skilled in <span class=\"texto-resaltado\">UI/UX design</span> and <span class=\"texto-resaltado\">front-end development</span>. Passionate about creating intuitive, user-centered interfaces that combine functionality and aesthetics.<br><br>Seeking internship opportunities to apply technical knowledge, grow professionally, and contribute to innovative projects. I am proactive, adaptable, and eager to learn.",
+  
+  "skills_title": "Skills",
+  "skills_development": "Multiplatform development",
+  "skills_dev_text": "Frameworks and languages focused on web, mobile and multiplatform development.",
+  "skills_tools": "Tools",
+  "skills_tools_text": "Platforms and resources I use.",
+  "skills_soft_text": "Interpersonal skills and aptitudes that define me.",
+  "skill_teamwork": "Teamwork",
+  "skill_leadership": "Leadership",
+  "skill_responsibility": "Responsibility",
+  "skill_planning": "Planning",
+  "skill_creativity": "Creativity",
+  "skill_curiosity": "Curiosity",
+  "skill_analytical_thinking": "Analytical thinking",
+
+  "project_title": "Development <br> Projects",
+  "project1_title": "Task management app",
+  "project2_title": "Maintenance control app",
+  "project3_title": "Inventory control",
+  "project4_title": "Database manager",
+  "project5_title": "Dino maze",
+  "project_link": "View code",
+
+  "design_title": "UI / UX <br> Design",
+  "project6_title": "Raíz & Pétalo Florist",
+  "design_link": "View details",
+
+  "experience_title": "Experience",
+  "timeline_date1": "Oct. 2024 - Apr. 2025",
+  "experience1_sub1": "Social Service Intern",
+  "experience1_place1": "CENEDIC UDC | On-site",
+  "experience1_text1": "Training in Front-end development tools, including <strong>React</strong> and <strong>Bootstrap 5.0</strong>, as well as basic version control with <strong>GitHub.</strong>",
+  "experience1_text2": "Design and proposal of improvements for institutional modules using <strong>Figma</strong>, with a focus on usability and visual consistency.",
+  "experience1_text3": "Contribution to improving the user experience through the creation of intuitive design alternatives.",
+  "experience1_project1": "UDC portfolio prototype",
+  "experience1_project2": "FEUC Competition prototype",
+  "timeline_date2": "Dec. 2024 - Dec. 2025",
+  "experience2_sub1": "ADA Project",
+  "experience2_place1": "School of Telematics, UDC | Hybrid",
+  "experience2_text1": "Volunteer responsible for managing social media and creating digital content, designing strategies to increase the project's reach, and encouraging the interest of young women (14-18 years) in programming and technology.",
+  "timeline_date3": "Jan. 2026 - Present",
+  "experience3_place1": "Nattib | Hybrid (Internship)",
+  "experience3_text1": "Design and development of responsive interfaces for a health web platform focused on streamlining the workflows of resident physicians in public hospitals.",
+  "experience3_text2": "I work on implementing user-centered solutions, seeking to improve usability and reduce processes complexity.",
+  "experience3_text3": "Technologies: <strong>React + Vite, Bootstrap 5.3.</strong> / Design: <strong>Figma.</strong>",
+
+  "education_title": "Education",
+  "education_degree": "Software Engineering (UDC)",
+  "education_period": "Period: Aug.2022 - Expected to graduate in 2026",
+  "education_institution": "Institution: School of Telematics, University of Colima.",
+  "education_description": "Description: Degree in software engineering, with a focus on front-end development and UI/UX design.",
+
+  "contact_title": "Contact me!",
+  "contact_text": "Do you have a project in mind or a creative idea? <br> Let's build it together."
+  
+
+
+
+
+}

@@ -24,18 +24,70 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
-/* Cargar modales externos */
-document.addEventListener('DOMContentLoaded', () => {
-  const lang = document.documentElement.lang; // Detecta 'es' o 'en'
+/* Lógica de Traducción i18n */
+let translations = {};
+const translateBtn = document.getElementById('translate-btn');
+
+async function loadTranslations() {
+  try {
+    // 1. Capturar el texto original en español directamente del HTML si no existe el respaldo
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      if (!el.hasAttribute('data-es-original')) {
+        el.setAttribute('data-es-original', el.innerHTML);
+      }
+    });
+
+    const response = await fetch('translations.json');
+    translations = await response.json();
+    
+    const savedLang = localStorage.getItem('language') || 'es';
+    applyLanguage(savedLang);
+  } catch (error) {
+    console.error('Error cargando traducciones:', error);
+  }
+}
+
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+  localStorage.setItem('language', lang);
+
+  const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+  elementsToTranslate.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    
+    if (lang === 'es' && el.hasAttribute('data-es-original')) {
+      el.innerHTML = el.getAttribute('data-es-original');
+    } else if (translations[key]) {
+      el.innerHTML = translations[key];
+    }
+  });
+
+  // Recargar modales según el idioma aplicado
+  loadModals(lang);
+}
+
+function loadModals(lang) {
   const modalFile = lang === 'en' ? 'modales-en.html' : 'modales-es.html';
   
   fetch(modalFile)
     .then(response => response.text())
     .then(html => {
-      document.getElementById('modal-container').innerHTML = html;
+      const container = document.getElementById('modal-container');
+      if (container) {
+        container.innerHTML = html;
+      }
     })
     .catch(err => console.error('Error cargando los modales:', err));
-});
+}
+
+if (translateBtn) {
+  translateBtn.addEventListener('click', () => {
+    const newLang = document.documentElement.lang === 'es' ? 'en' : 'es';
+    applyLanguage(newLang);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', loadTranslations);
 
 /*
 let app = document.getElementById('typewriter');

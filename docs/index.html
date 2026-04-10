@@ -41,28 +41,28 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              <a class="nav-link active" aria-current="page" href="#sobre-mi" data-i18n="nav_about">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#habilidades">Habilidades</a>
+              <a class="nav-link" href="#habilidades" data-i18n="nav_skills">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
+              <a class="nav-link" href="#proyectos" data-i18n="nav_projects">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experiencia">Experiencia</a>
+              <a class="nav-link" href="#experiencia" data-i18n="nav_experience">Experiencia</a>
             </li>  
             <li class="nav-item">
-              <a class="nav-link" href="#certificaciones-y-educacion">Educación</a>
+              <a class="nav-link" href="#certificaciones-y-educacion" data-i18n="nav_education">Educación</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="#contacto" data-i18n="nav_contact">Contacto</a>
             </li> 
           </ul>
-
-          <button id="translate-btn" class="btn btn-dark ms-auto" onclick="window.location.href='#'" aria-label="Cambiar a versión en Inglés">
+          
+          <button id="translate-btn" class="btn btn-dark ms-auto" aria-label="Cambiar idioma">
             <i class="bi bi-translate"></i>
-            Inglés
+            <span data-i18n="btn_translate">Inglés</span>
           </button>
         </div>
       </div>
@@ -73,7 +73,7 @@
   <h1 class="hero-background">PORTFOLIO</h1>
 
   <div class="hero-content">
-    <img src="imagenes/foto-perfil.png" class="hero-photo" alt="Foto de perfil de Nataly">
+    <img src="imagenes/foto-perfil-nataly.png" class="hero-photo" alt="Foto de perfil de Nataly">
 
     <div class="hero-left">
       <p>FRONT-END DEVELOPER <br> & UI/UX DESIGNER</p>
@@ -92,12 +92,12 @@
       <div class="container" data-aos="fade-up">
         <div class="row align-items-center">
           <div class="col-md-4 mb-4 mb-md-0">
-            <h2 class="seccion-titulo text-md-start" style="border-left: 5px solid #a9c195; padding-left: 20px;">
+            <h2 class="seccion-titulo text-md-start" style="border-left: 5px solid #a9c195; padding-left: 20px;" data-i18n="about_title">
               Un poco <br> <span class="texto-resaltado">sobre mí</span>
             </h2>
           </div>
           <div class="col-md-8">
-            <p class="seccion-texto">
+            <p class="seccion-texto" data-i18n="about_text">
               Estudiante de <span class="texto-resaltado">Ingeniería de Software</span> próxima a egresar, con conocimientos en <span class="texto-resaltado">diseño UI/UX</span> y <span class="texto-resaltado">desarrollo front-end</span>. Apasionada por la creación de interfaces que no solo sean visualmente atractivas, sino también intuitivas y centradas en la experiencia del usuario.
               <br><br>
               Soy una persona proactiva y con gran disposición a aprender, en busca de nuevos retos que me permitan aplicar mis conocimientos técnicos y creativos para aportar en proyectos innovadores.
@@ -110,13 +110,13 @@
     <!--Habilidades-->
     <section id="habilidades" class="habilidades seccion-clara">
       <div class="container">
-        <h2 class="seccion-titulo">Habilidades</h2>
+        <h2 class="seccion-titulo" data-i18n="skills_title">Habilidades</h2>
 
         <div class="container-cards">
         <div class="card" data-aos="fade-up" style="width: 23rem;">
           <div class="card-body">
-            <h3 class="card-title" style="font-size: 1.5rem;">Desarrollo multiplataforma</h3>
-            <p class="card-text" style="font-size: 1.3rem;">Frameworks y lenguajes enfocados al desarrollo web, móvil y múltiplataforma.</p>
+            <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_development">Desarrollo multiplataforma</h3>
+            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_dev_text">Frameworks y lenguajes enfocados al desarrollo web, móvil y múltiplataforma.</p>
           </div>
           
           <div class="card-body tech-grid d-flex flex-wrap gap-3 justify-content-center">
@@ -165,8 +165,8 @@
 
         <div class="card" data-aos="fade-up" style="width: 23rem;">
           <div class="card-body">
-            <h3 class="card-title" style="font-size: 1.5rem;">Herramientas</h3>
-            <p class="card-text" style="font-size: 1.3rem;">Plataformas y recursos que utilizo.</p>
+            <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_tools">Herramientas</h3>
+            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_tools_text">Plataformas y recursos que utilizo.</p>
           </div>
           
           <div class="card-body tech-grid d-flex flex-wrap gap-3 justify-content-center">
@@ -196,16 +196,16 @@
         <div class="card" data-aos="fade-up" style="width: 23rem;">
           <div class="card-body">
             <h3 class="card-title" style="font-size: 1.5rem;">Soft skills</h3>
-            <p class="card-text" style="font-size: 1.3rem;">Habilidades interpersonales y aptitudes que me definen.</p>
+            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_soft_text">Habilidades interpersonales y aptitudes que me definen.</p>
           </div>
           <div class="card-body d-flex flex-wrap justify-content-center gap-2">
-            <span class="skill-badge">Trabajo en equipo</span>
-            <span class="skill-badge">Liderazgo</span>
-            <span class="skill-badge">Responsabilidad</span>
-            <span class="skill-badge">Planificación</span>
-            <span class="skill-badge">Creatividad</span>
-            <span class="skill-badge">Curiosidad</span>
-            <span class="skill-badge">Pensamiento analítico</span>
+            <span class="skill-badge" data-i18n="skill_teamwork">Trabajo en equipo</span>
+            <span class="skill-badge" data-i18n="skill_leadership">Liderazgo</span>
+            <span class="skill-badge" data-i18n="skill_responsibility">Responsabilidad</span>
+            <span class="skill-badge" data-i18n="skill_planning">Planificación</span>
+            <span class="skill-badge" data-i18n="skill_creativity">Creatividad</span>
+            <span class="skill-badge" data-i18n="skill_curiosity">Curiosidad</span>
+            <span class="skill-badge" data-i18n="skill_analytical_thinking">Pensamiento analítico</span>
           </div>
         </div>
         </div>
@@ -220,7 +220,7 @@
         <div class="row mb-5" data-aos="fade-up">
           <div class="col-lg-3 mb-4">
             <h2 class="seccion-titulo text-lg-start sticky-title" style="border-left: 5px solid #ffffff; padding-left: 20px;">
-              Proyectos de <br> Desarrollo
+              <span data-i18n="project_title">Proyectos de <br> Desarrollo</span>
               <i class="ti ti-code d-block mt-2" style="font-size: 2.5rem; color: #ffffff;"></i>
             </h2>
           </div>
@@ -230,41 +230,41 @@
               <div class="card">
                 <img src="imagenes/proyectos/proyecto1.png" alt="App de tareas">
                 <div class="card-body text-center">
-                  <h3 class="card-title">App gestión de tareas</h3>
+                  <h3 class="card-title" data-i18n="project1_title">App gestión de tareas</h3>
                   <p class="card-text text-muted">Kotlin, XML</p>
-                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-tareas" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-tareas" target="_blank" class="btn btn-dark btn-sm w-100" data-i18n="project_link">Ver código</a>
                 </div>
               </div>
               <div class="card">
                 <img src="imagenes/proyectos/proyecto2.png" alt="App mantenimiento">
                 <div class="card-body text-center">
-                  <h3 class="card-title">App control mantenimientos</h3>
+                  <h3 class="card-title" data-i18n="project2_title">App control mantenimientos</h3>
                   <p class="card-text text-muted">Ionic 7, TypeScript</p>
-                  <a href="https://github.com/WhiteBryz/MantenimientosApp" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                  <a href="https://github.com/WhiteBryz/MantenimientosApp" target="_blank" class="btn btn-dark btn-sm w-100" data-i18n="project_link">Ver código</a>
                 </div>
               </div>
               <div class="card">
                 <img src="imagenes/proyectos/proyecto3.png" alt="Gestión tienda">
                 <div class="card-body text-center">
-                  <h3 class="card-title">Control de inventario</h3>
+                  <h3 class="card-title" data-i18n="project3_title">Control de inventario</h3>
                   <p class="card-text text-muted">Ionic 7, Angular</p>
-                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-gestion-de-tienda/tree/master" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                  <a href="https://github.com/nataly-iglesias/Aplicacion-de-gestion-de-tienda/tree/master" target="_blank" class="btn btn-dark btn-sm w-100" data-i18n="project_link">Ver código</a>
                 </div>
               </div>
               <div class="card">
                 <img src="imagenes/proyectos/proyecto6.png" alt="Gestor BD">
                 <div class="card-body text-center">
-                  <h3 class="card-title">Gestor de bases de datos</h3>
+                  <h3 class="card-title" data-i18n="project4_title">Gestor de bases de datos</h3>
                   <p class="card-text text-muted">React, TypeScript, Node.js</p>
-                  <a href="https://github.com/dantrixxheron/proyecto-bd" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                  <a href="https://github.com/dantrixxheron/proyecto-bd" target="_blank" class="btn btn-dark btn-sm w-100" data-i18n="project_link">Ver código</a>
                 </div>
               </div>
               <div class="card">
                 <img src="imagenes/proyectos/proyecto7.jpg" alt="Dino Laberinto">
                 <div class="card-body text-center">
-                  <h3 class="card-title">Dino laberinto</h3>
+                  <h3 class="card-title" data-i18n="project5_title">Dino laberinto</h3>
                   <p class="card-text text-muted">GDScript, Python</p>
-                  <a href="https://github.com/nataly-iglesias/Dino-Videogame/tree/main" target="_blank" class="btn btn-dark btn-sm w-100">Ver código</a>
+                  <a href="https://github.com/nataly-iglesias/Dino-Videogame/tree/main" target="_blank" class="btn btn-dark btn-sm w-100" data-i18n="project_link">Ver código</a>
                 </div>
               </div>
             </div>
@@ -277,7 +277,7 @@
         <div class="row" data-aos="fade-up">
           <div class="col-lg-3 mb-4">
             <h2 class="seccion-titulo text-lg-start sticky-title" style="border-left: 5px solid #ffffff; padding-left: 20px;">
-              Diseño <br> UI / UX
+              <span data-i18n="design_title">Diseño <br> UI / UX</span>
               <i class="ti ti-palette d-block mt-2" style="font-size: 2.5rem; color: #ffffff;"></i>
             </h2>
           </div>
@@ -287,9 +287,9 @@
               <div class="card">
                 <img src="imagenes/proyectos/proyectoFloreria/portadaProyecto.png" alt="Raíz y Pétalo">
                 <div class="card-body text-center">
-                  <h3 class="card-title">Raíz y Pétalo</h3>
+                  <h3 class="card-title" data-i18n="project6_title">Florería Raíz y Pétalo</h3>
                   <p class="card-text text-muted">(Desktop)</p>
-                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalRaizPetalo">Ver detalles</button>
+                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalRaizPetalo" data-i18n="design_link">Ver detalles</button>
                 </div>
               </div>
               <div class="card">
@@ -297,7 +297,7 @@
                 <div class="card-body text-center">
                   <h3 class="card-title">MoneyWise</h3>
                   <p class="card-text text-muted">(Mobile)</p>
-                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalMoneyWise">Ver detalles</button>
+                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalMoneyWise" data-i18n="design_link">Ver detalles</button>
                 </div>
               </div>
               <div class="card">
@@ -305,7 +305,7 @@
                 <div class="card-body text-center">
                   <h3 class="card-title">CareBites</h3>
                   <p class="card-text text-muted">(Mobile)</p>
-                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalCareBites">Ver detalles</button>
+                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalCareBites" data-i18n="design_link">Ver detalles</button>
                 </div>
               </div>
             </div>
@@ -317,7 +317,7 @@
     <!-- Experiencia -->
     <section id="experiencia" class="experiencia seccion-clara">
       <div class="container">
-        <h2 class="seccion-titulo">Experiencia</h2>
+        <h2 class="seccion-titulo" data-i18n="experience_title">Experiencia</h2>
         
         <div class="timeline">
           
@@ -327,22 +327,22 @@
               <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
             </div>
             <div class="timeline-card">
-              <span class="timeline-date">Oct. 2024 - Abr. 2025</span>
-              <h3 style="font-size: 1.5rem; font-weight: bold;">Servicio social constitucional</h3>
-              <p class="text-muted mb-3">CENEDIC UDC | Presencial</p>
+              <span class="timeline-date" data-i18n="timeline_date1">Oct. 2024 - Abr. 2025</span>
+              <h3 style="font-size: 1.5rem; font-weight: bold;" data-i18n="experience1_sub1">Servicio social constitucional</h3>
+              <p class="text-muted mb-3" data-i18n="experience1_place1">CENEDIC UDC | Presencial</p>
               
               <ul style="font-size: 1.1rem; text-align: justify; padding-left: 1.2rem;">
-                <li>Capacitación en herramientas de desarrollo Front-end, incluyendo <strong>React</strong> y <strong>Bootstrap 5.0</strong>, así como control de versiones básico con <strong>GitHub.</strong></li> 
-                <li>Diseño y propuesta de mejoras para los módulos institucionales utilizando <strong>Figma</strong>, con enfoque en la usabilidad y consistencia visual.</li> 
-                <li>Contribución a la mejora de la experiencia del usuario mediante la creación de alternativas de diseño intuitivas.</li>
+                <li data-i18n="experience1_text1">Capacitación en herramientas de desarrollo Front-end, incluyendo <strong>React</strong> y <strong>Bootstrap 5.0</strong>, así como control de versiones básico con <strong>GitHub.</strong></li> 
+                <li data-i18n="experience1_text2">Diseño y propuesta de mejoras para los módulos institucionales utilizando <strong>Figma</strong>, con enfoque en la usabilidad y consistencia visual.</li> 
+                <li data-i18n="experience1_text3">Contribución a la mejora de la experiencia del usuario mediante la creación de alternativas de diseño intuitivas.</li>
               </ul>
 
               <div class="d-flex flex-wrap gap-2 mt-3">
                 <a href="https://www.figma.com/proto/lAg40jdy4PpJOVFD2LSGkv/Propuesta-portafolio?node-id=2-144&p=f&t=SVhDVIKC1vlhjdjk-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
-                  Prototipo portafolio UDC <i class="ti ti-external-link ms-1"></i>
+                  <span data-i18n="experience1_project1">Prototipo portafolio UDC</span> <i class="ti ti-external-link ms-1"></i>
                 </a>
                 <a href="https://www.figma.com/proto/XkNRICA8siqC5MsHVHr44M/Propuesta-registro---Carrera-FEUC?node-id=2330-96&p=f&t=KbQKghGjE6q8KYY5-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2330%3A96" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
-                  Prototipo Carrera FEUC <i class="ti ti-external-link ms-1"></i>
+                  <span data-i18n="experience1_project2">Prototipo Carrera FEUC</span> <i class="ti ti-external-link ms-1"></i>
                 </a>
               </div>
             </div>
@@ -354,10 +354,10 @@
               <i class="bi bi-people" style="font-size: 1.5rem;"></i>
             </div>
             <div class="timeline-card">
-              <span class="timeline-date">Dic. 2024 - Dic. 2025</span>
-              <h3 style="font-size: 1.5rem; font-weight: bold;">Proyecto ADA</h3>
-              <p class="text-muted mb-3">Facultad de Telemática, UDC | Híbrido</p>
-              <p style="font-size: 1.1rem; text-align: justify;">
+              <span class="timeline-date" data-i18n="timeline_date2">Dic. 2024 - Dic. 2025</span>
+              <h3 style="font-size: 1.5rem; font-weight: bold;" data-i18n="experience2_sub1">Proyecto ADA</h3>
+              <p class="text-muted mb-3" data-i18n="experience2_place1">Facultad de Telemática, UDC | Híbrido</p>
+              <p style="font-size: 1.1rem; text-align: justify;" data-i18n="experience2_text1">
                 Voluntaria encargada de la gestión de redes sociales y creación de contenido digital, diseñando estrategias para aumentar el alcance del proyecto y fomentar el interés de jóvenes mujeres (14-18 años) en la programación y la tecnología.
               </p>
               <div class="d-flex mt-3">
@@ -374,14 +374,14 @@
               <i class="bi bi-code-slash" style="font-size: 1.5rem;"></i>
             </div>
             <div class="timeline-card">
-              <span class="timeline-date">Ene. 2026 - Actualidad</span>
+              <span class="timeline-date" data-i18n="timeline_date3">Ene. 2026 - Actualidad</span>
               <h3 style="font-size: 1.5rem; font-weight: bold;">Front-end developer & UI designer</h3>
-              <p class="text-muted mb-3">Nattib | Híbrido (Internship)</p>
+              <p class="text-muted mb-3" data-i18n="experience3_place1">Nattib | Híbrido (Internship)</p>
               
               <ul style="font-size: 1.1rem; text-align: justify; padding-left: 1.2rem;">
-                <li>Diseño y desarrollo de interfaces responsivas para una plataforma web de salud enfocada en agilizar los flujos de trabajo de médicos residentes en hospitales públicos.</li>  
-                <li>Trabajo en la implementación de soluciones centradas en el usuario, buscando mejorar la usabilidad y reducir la complejidad de los procesos.</li> 
-                <li class="mt-2">Tecnologías: <strong>React + Vite, Bootstrap 5.3.</strong> / Diseño: <strong>Figma.</strong></li>
+                <li data-i18n="experience3_text1">Diseño y desarrollo de interfaces responsivas para una plataforma web de salud enfocada en agilizar los flujos de trabajo de médicos residentes en hospitales públicos.</li>  
+                <li data-i18n="experience3_text2">Trabajo en la implementación de soluciones centradas en el usuario, buscando mejorar la usabilidad y reducir la complejidad de los procesos.</li> 
+                <li class="mt-2" data-i18n="experience3_text3">Tecnologías: <strong>React + Vite, Bootstrap 5.3.</strong> / Diseño: <strong>Figma.</strong></li>
               </ul>
               <div class="d-flex mt-3">
                 <a href="https://dailhu.com/login" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
@@ -398,21 +398,21 @@
     <!--Educación-->
     <section id="certificaciones-y-educacion" class="certificaciones seccion-oscura">
       <div class="container">
-        <h2 class="seccion-titulo">Educación</h2>
+        <h2 class="seccion-titulo" data-i18n="education_title">Educación</h2>
       
         <div class="accordion" id="educacionAccordion">
           
           <div class="accordion-item">
             <h3 class="accordion-header" id="headingEdu1">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edu1" aria-expanded="false" aria-controls="edu1" style="font-size: 1.3rem">
-                <strong>Ingeniería de Software (UDC)</strong>
+                <strong data-i18n="education_degree">Ingeniería de Software (UDC)</strong>
               </button>
             </h4>
             <div id="edu1" class="accordion-collapse collapse" aria-labelledby="headingEdu1" data-bs-parent="#educacionAccordion">
               <div class="accordion-body animate__animated animate__fadeIn">
-                <p style="font-size: 1.3rem"><i>Periodo:</i> Ago.2022 - Próxima a egresar en 2026</p>
-                <p style="font-size: 1.3rem"><i>Institución:</i> Facultad de Telemática, Universidad de Colima.</p>
-                <p style="font-size: 1.3em;"><i>Descripción:</i> Grado en ingeniería de software, con enfoque hacia desarrollo front-end y diseño UI/UX.</p>
+                <p style="font-size: 1.3rem" data-i18n="education_period"> <i>Periodo:</i> Ago.2022 - Próxima a egresar en 2026</p>
+                <p style="font-size: 1.3rem" data-i18n="education_institution"><i>Institución:</i> Facultad de Telemática, Universidad de Colima.</p>
+                <p style="font-size: 1.3em;" data-i18n="education_description"><i>Descripción:</i> Grado en ingeniería de software, con enfoque hacia desarrollo front-end y diseño UI/UX.</p>
               </div>
             </div>
           </div>
@@ -423,8 +423,8 @@
     <section id="contacto" class="contacto seccion-oscura py-5">
       <div class="container text-center" data-aos="fade-up">
         <div class="rectangulo">
-          <h2 class="seccion-titulo mb-3">¡Contáctame!</h2>
-          <p class="mb-4" style="font-size: 1.2rem;">¿Tienes un proyecto en mente o una idea creativa? <br> Construyámosla juntos.</p>
+          <h2 class="seccion-titulo mb-3" data-i18n="contact_title">¡Contáctame!</h2>
+          <p class="mb-4" style="font-size: 1.2rem;" data-i18n="contact_text">¿Tienes un proyecto en mente o una idea creativa? <br> Construyámosla juntos.</p>
           
           <div class="d-flex justify-content-center flex-wrap gap-4 iconos-redes-sociales mb-4">
             <a href="https://github.com/nataly-iglesias" target="_blank" aria-label="GitHub">
