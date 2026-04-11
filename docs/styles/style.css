@@ -418,6 +418,7 @@ h1 {
   font-weight: bold;
   border-radius: 20px;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .proyectos .card img {
