@@ -37,6 +37,13 @@ async function loadTranslations() {
       }
     });
 
+    // 2. Capturar el enlace original (español) si existe el atributo data-i18n-link
+    document.querySelectorAll('[data-i18n-link]').forEach(el => {
+      if (!el.hasAttribute('data-es-href')) {
+        el.setAttribute('data-es-href', el.getAttribute('href'));
+      }
+    });
+
     const response = await fetch('translations.json');
     translations = await response.json();
     
@@ -59,6 +66,17 @@ function applyLanguage(lang) {
       el.innerHTML = el.getAttribute('data-es-original');
     } else if (translations[key]) {
       el.innerHTML = translations[key];
+    }
+  });
+
+  // Aplicar traducción a los atributos href (enlaces)
+  const linksToTranslate = document.querySelectorAll('[data-i18n-link]');
+  linksToTranslate.forEach(el => {
+    const key = el.getAttribute('data-i18n-link');
+    if (lang === 'es' && el.hasAttribute('data-es-href')) {
+      el.href = el.getAttribute('data-es-href');
+    } else if (translations[key]) {
+      el.href = translations[key];
     }
   });
 

@@ -40,7 +40,7 @@
   "timeline_date1": "Oct. 2024 - Apr. 2025",
   "experience1_sub1": "Social Service Intern",
   "experience1_place1": "CENEDIC UDC | On-site",
-  "experience1_text1": "Training in Front-end development tools, including <strong>React</strong> and <strong>Bootstrap 5.0</strong>, as well as basic version control with <strong>GitHub.</strong>",
+  "experience1_text1": "Training in front-end development tools, including <strong>React</strong> and <strong>Bootstrap 5.0</strong>, as well as basic version control with <strong>GitHub.</strong>",
   "experience1_text2": "Design and proposal of improvements for institutional modules using <strong>Figma</strong>, with a focus on usability and visual consistency.",
   "experience1_text3": "Contribution to improving the user experience through the creation of intuitive design alternatives.",
   "experience1_project1": "UDC portfolio prototype",
@@ -62,10 +62,6 @@
   "education_description": "Description: Degree in software engineering, with a focus on front-end development and UI/UX design.",
 
   "contact_title": "Contact me!",
-  "contact_text": "Do you have a project in mind or a creative idea? <br> Let's build it together."
-  
-
-
-
-
+  "contact_text": "Do you have a project in mind or a creative idea? <br> Let's build it together.",
+  "cv_link": "https://drive.google.com/file/d/1wilH5xxC0mIe-a4-5-ew-UlBK8wJJlut/view?usp=sharing"
 }
