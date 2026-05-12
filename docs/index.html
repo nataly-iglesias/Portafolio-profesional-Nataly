@@ -113,7 +113,7 @@
         <h2 class="seccion-titulo" data-i18n="skills_title">Habilidades</h2>
 
         <div class="container-cards">
-        <div class="card" data-aos="fade-up" style="width: 23rem;">
+        <div class="card" data-aos="fade-up">
           <div class="card-body">
             <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_development">Desarrollo multiplataforma</h3>
             <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_dev_text">Frameworks y lenguajes enfocados al desarrollo web, móvil y múltiplataforma.</p>
@@ -163,10 +163,10 @@
           </div>
         </div>
 
-        <div class="card" data-aos="fade-up" style="width: 23rem;">
+        <div class="card" data-aos="fade-up">
           <div class="card-body">
-            <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_tools">Herramientas</h3>
-            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_tools_text">Plataformas y recursos que utilizo.</p>
+            <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_design_tools">Herramientas de diseño & UX</h3>
+            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_design_tools_text">Recursos para prototipado, investigación y análisis.</p>
           </div>
           
           <div class="card-body tech-grid d-flex flex-wrap gap-3 justify-content-center">
@@ -179,8 +179,50 @@
               <span>Lucidchart</span>
             </div>
             <div class="tech-item">
+              <i class="ti ti-arrow-big-left" style="font-size: 3rem;"></i>
+              <span>Optimal Workshop</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-hexagon" style="font-size: 3rem;"></i>
+              <span>UXtweak</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-wave-sine" style="font-size: 3rem;"></i>
+              <span>WAVE</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-contrast" style="font-size: 3rem;"></i>
+              <span>Contrast Checker</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-notion" style="font-size: 3rem;"></i>
+              <span>Notion</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-square-rounded-letter-m" style="font-size: 3rem;"></i>
+              <span>Miro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_dev_tools">Herramientas de desarrollo</h3>
+            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_dev_tools_text">Tecnologías y herramientas utilizadas para el desarrollo, pruebas y control de versiones.</p>
+          </div>
+          
+          <div class="card-body tech-grid d-flex flex-wrap gap-3 justify-content-center">
+            <div class="tech-item">
               <i class="ti ti-brand-github" style="font-size: 3rem;"></i>
               <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-brand-nodejs" style="font-size: 3rem;"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-send" style="font-size: 3rem;"></i>
+              <span>Postman</span>
             </div>
             <div class="tech-item">
               <i class="ti ti-brand-vscode" style="font-size: 3rem;"></i>
@@ -193,7 +235,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="fade-up" style="width: 23rem;">
+        <div class="card" data-aos="fade-up">
           <div class="card-body">
             <h3 class="card-title" style="font-size: 1.5rem;">Soft skills</h3>
             <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_soft_text">Habilidades interpersonales y aptitudes que me definen.</p>
@@ -210,6 +252,7 @@
         </div>
         </div>
         </div>
+      </div> <!-- Fin container-cards -->
       </div>
     </section>
 
@@ -283,12 +326,29 @@
           </div>
 
           <div class="col-lg-9">
+            <!-- Proyecto Destacado (CareBites) -->
+            <div class="card card-featured mb-4" data-aos="fade-up">
+              <div class="badge-featured" data-i18n="project_competition">🏆 Concurso SDC - CLIHC 2026</div>
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4">
+                  <img src="imagenes/proyectos/proyectoCareBites/portadaProyecto.png" class="img-fluid rounded-start img-featured" alt="CareBites">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-4">
+                    <h3 class="card-title">CareBites</h3>
+                    <p class="card-text text-muted" data-i18n="card-description1">Propuesta de aplicación móvil para la donación y venta de alimentos a bajo costo, buscando un impacto social positivo en la comunidad. <br><strong>Student Design Competition - CLIHC 2026.</strong></p>
+                    <button type="button" class="btn btn-dark btn-sm px-4" data-bs-toggle="modal" data-bs-target="#modalCareBites" data-i18n="design_link">Ver detalles</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="proyectos-grid">
               <div class="card">
                 <img src="imagenes/proyectos/proyectoFloreria/portadaProyecto.png" alt="Raíz y Pétalo">
                 <div class="card-body text-center">
                   <h3 class="card-title" data-i18n="project6_title">Florería Raíz y Pétalo</h3>
-                  <p class="card-text text-muted">(Desktop)</p>
+                  <p class="card-text text-muted" data-i18n="card-description2">Prototipo de florería online.</p>
                   <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalRaizPetalo" data-i18n="design_link">Ver detalles</button>
                 </div>
               </div>
@@ -296,16 +356,8 @@
                 <img src="imagenes/proyectos/proyectoMoneyWise/portadaProyecto.png" alt="MoneyWise">
                 <div class="card-body text-center">
                   <h3 class="card-title">MoneyWise</h3>
-                  <p class="card-text text-muted">(Mobile)</p>
+                  <p class="card-text text-muted" data-i18n="card-description3">Prototipo de aplicación móvil para la gestión financiera.</p>
                   <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalMoneyWise" data-i18n="design_link">Ver detalles</button>
-                </div>
-              </div>
-              <div class="card">
-                <img src="imagenes/proyectos/proyectoCareBites/portadaProyecto.png" alt="CareBites">
-                <div class="card-body text-center">
-                  <h3 class="card-title">CareBites</h3>
-                  <p class="card-text text-muted">(Mobile)</p>
-                  <button type="button" class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalCareBites" data-i18n="design_link">Ver detalles</button>
                 </div>
               </div>
             </div>
@@ -436,7 +488,7 @@
             <a href="mailto:natt0iglesias@gmail.com" aria-label="Correo electrónico">
               <i class="ti ti-mail" style="font-size: 2.5rem;"></i>
             </a>
-            <a href="https://drive.google.com/file/d/1uz8W6u3vnKU0J1I18829t8CPn0UeQ_e3/view?usp=sharing" target="_blank" aria-label="Currículum" data-i18n-link="cv_link">
+            <a href="https://drive.google.com/file/d/1kQ8obIYSXe534xQKOfrUaNLQG0n25SAX/view?usp=sharing" target="_blank" aria-label="Currículum" data-i18n-link="cv_link">
               <i class="ti ti-file" style="font-size: 2.5rem;"></i>
             </a>
           </div>

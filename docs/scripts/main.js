@@ -24,20 +24,21 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
+
 /* Lógica de Traducción i18n */
 let translations = {};
 const translateBtn = document.getElementById('translate-btn');
 
 async function loadTranslations() {
   try {
-    // 1. Capturar el texto original en español directamente del HTML si no existe el respaldo
+    // Capturar el texto original en español directamente del HTML
     document.querySelectorAll('[data-i18n]').forEach(el => {
       if (!el.hasAttribute('data-es-original')) {
         el.setAttribute('data-es-original', el.innerHTML);
       }
     });
 
-    // 2. Capturar el enlace original (español) si existe el atributo data-i18n-link
+    // Capturar el enlace original (español) si existe el atributo data-i18n-link
     document.querySelectorAll('[data-i18n-link]').forEach(el => {
       if (!el.hasAttribute('data-es-href')) {
         el.setAttribute('data-es-href', el.getAttribute('href'));
@@ -82,8 +83,43 @@ function applyLanguage(lang) {
 
   // Recargar modales según el idioma aplicado
   loadModals(lang);
+
+
+  /* Efecto scramble en sección hero */
+  // Ejecutar efecto en los textos del hero
+  const heroLeft = document.querySelector('.hero-left p');
+  const heroRight = document.querySelector('.hero-right p');
+  if (heroLeft) scrambleText(heroLeft);
+  if (heroRight) scrambleText(heroRight);
 }
 
+// Efecto scramble para el texto
+function scrambleText(element) {
+  const originalHTML = element.innerHTML;
+  const textContent = element.innerText;
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*';
+  let iteration = 0;
+  
+  const interval = setInterval(() => {
+    element.innerText = textContent.split("")
+      .map((letter, index) => {
+        if (index < iteration || letter === " " || letter === "\n") {
+          return textContent[index];
+        }
+        return characters[Math.floor(Math.random() * characters.length)];
+      })
+      .join("");
+    
+    if (iteration >= textContent.length) {
+      clearInterval(interval);
+      element.innerHTML = originalHTML; // Restaur el HTML original
+    }
+    
+    iteration += 1 / 0.8; // Velocidad
+  }, 30);
+}
+
+/* Función para cargar los modales según el idioma */
 function loadModals(lang) {
   const modalFile = lang === 'en' ? 'modales-en.html' : 'modales-es.html';
   
@@ -106,37 +142,3 @@ if (translateBtn) {
 }
 
 document.addEventListener('DOMContentLoaded', loadTranslations);
-
-/*
-let app = document.getElementById('typewriter');
- 
-let typewriter = new Typewriter(app, {
-  delay: 75,
- cursor: "<span style='color: #666a87;'>|</span>",
-});
- 
-// Animación: Maquina de escribir
-typewriter
-  .pauseFor(1700)
-  .typeString('<span style="color: #666a87;">Front-end Developer and UI/UX Designer</span>')
-  .pauseFor(200)
-  .start();
-*/
-
-/*
-//Animación estrellas cursor
-  document.addEventListener("mousemove", function(e) {
-  const star = document.createElement("div");
-  star.classList.add("star");
-  star.innerHTML = "☆";
-
-  star.style.left = e.clientX + "px";
-  star.style.top = e.clientY + "px";
-
-  document.body.appendChild(star);
-
-  setTimeout(() => {
-    star.remove();
-  }, 700);
-});
-*/

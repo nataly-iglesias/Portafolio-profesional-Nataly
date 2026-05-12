@@ -13,8 +13,10 @@
   "skills_title": "Skills",
   "skills_development": "Multiplatform development",
   "skills_dev_text": "Frameworks and languages focused on web, mobile and multiplatform development.",
-  "skills_tools": "Tools",
-  "skills_tools_text": "Platforms and resources I use.",
+  "skills_design_tools": "Design & UX Tools",
+  "skills_design_tools_text": "Resources for prototyping, user research, and analysis.",
+  "skills_dev_tools": "Development Tools",
+  "skills_dev_tools_text": "Technologies and tools used for development, testing, and version control.",
   "skills_soft_text": "Interpersonal skills and aptitudes that define me.",
   "skill_teamwork": "Teamwork",
   "skill_leadership": "Leadership",
@@ -35,6 +37,10 @@
   "design_title": "UI / UX <br> Design",
   "project6_title": "Raíz & Pétalo Florist",
   "design_link": "View details",
+  "project_competition": "🏆 SDC - CLIHC 2026 Competition",
+  "card-description1": "Proposal for a mobile application for the donation and sale of low-cost food, seeking a positive social impact in the community. <br><strong>Student Design Competition - CLIHC 2026.</strong>",
+  "card-description2": "Online florist prototype.",
+  "card-description3": "Mobile application prototype for financial management.",
 
   "experience_title": "Experience",
   "timeline_date1": "Oct. 2024 - Apr. 2025",
@@ -63,5 +69,5 @@
 
   "contact_title": "Contact me!",
   "contact_text": "Do you have a project in mind or a creative idea? <br> Let's build it together.",
-  "cv_link": "https://drive.google.com/file/d/1wilH5xxC0mIe-a4-5-ew-UlBK8wJJlut/view?usp=sharing"
+  "cv_link": "https://drive.google.com/file/d/1ciH52eocNWg3Mti-MO30bVzFrgnJWQ4h/view?usp=sharing"
 }
