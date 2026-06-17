@@ -8,7 +8,7 @@
   "btn_translate": "Spanish",
 
   "about_title": "A bit <br> <span class=\"texto-resaltado\">about me</span>",
-  "about_text": "Soon to be graduated in <span class=\"texto-resaltado\">Software Engineering</span> with experience in <span class=\"texto-resaltado\">UI/UX design</span> and <span class=\"texto-resaltado\">front-end development</span>. Passionate about creating interfaces that are not only visually appealing but also intuitive, accessible, and aligned with user's needs.<br><br> I am a proactive individual with a strong willingness to learn, seeking new challenges that allow me to apply my technical and creative skills while contributing to innovative projects.",
+  "about_text": "Soon to be graduated in <span class=\"texto-resaltado\">Software Engineering</span> with experience in <span class=\"texto-resaltado\">UI/UX design</span> and <span class=\"texto-resaltado\">front-end development</span>. Passionate about creating digital experiences that are not only visually appealing but also intuitive, accessible, and aligned with users' needs. <br><br> Interested in contributing to the development of digital products and services, integrating design and technology to generate solutions that have a positive and innovative impact.",
   
   "skills_title": "Skills",
   "skills_development": "Multiplatform development",
@@ -17,7 +17,7 @@
   "skills_design_tools_text": "Resources for prototyping, user research, and analysis.",
   "skills_dev_tools": "Development Tools",
   "skills_dev_tools_text": "Technologies and tools used for development, testing, and version control.",
-  "skills_soft_text": "Interpersonal skills and aptitudes that define me.",
+  "skills_soft_text": "Skills and aptitudes that define me.",
   "skill_teamwork": "Teamwork",
   "skill_prototyping": "Prototyping",
   "skill_creativity": "Creativity",
