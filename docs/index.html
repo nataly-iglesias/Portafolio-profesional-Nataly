@@ -78,13 +78,20 @@
     <img src="imagenes/foto-perfil-nataly.png" class="hero-photo" alt="Foto de perfil de Nataly">
 
     <div class="hero-left">
-      <p>FRONT-END DEVELOPER <br> & UI/UX DESIGNER</p>
+      <p>UI/UX DESIGNER <br> & FRONTEND DEVELOPER</p>
     </div>
 
     <div class="hero-right">
-      <p>NATALY IGLESIAS</p>
+      <p>ING. NATALY IGLESIAS</p>
     </div>
-
+  </div>
+  
+  <div class="sticker sticker-coffee">
+    <img src="imagenes/sticker-coffee.png" alt="">
+  </div>
+  
+  <div class="sticker sticker-computer">
+    <img src="imagenes/sticker-computer.png" alt="">
   </div>
 
 </section>
@@ -100,7 +107,7 @@
           </div>
           <div class="col-md-8">
             <p class="seccion-texto" data-i18n="about_text">
-              Próxima egresada de <span class="texto-resaltado">Ingeniería de Software</span>, con experiencia en <span class="texto-resaltado">diseño UI/UX</span> y <span class="texto-resaltado">desarrollo front-end</span>. Apasionada por la creación de  experiencas digitales que no solo sean visualmente atractivas, sino también intuitivas, accesibles y alineadas con las necesidades reales de los usuarios.
+              <span class="texto-resaltado">Ingeniera de Software</span> con experiencia en <span class="texto-resaltado">diseño UI/UX</span> y <span class="texto-resaltado">desarrollo front-end</span>. Apasionada por la creación de  experiencas digitales que no solo sean visualmente atractivas, sino también intuitivas, accesibles y alineadas con las necesidades reales de los usuarios.
               <br><br>
               Interesada en contribuir al desarrollo de productos y servicios digitales, integrando diseño y tecnología para generar soluciones con un impacto positivo e innovador.
             </p>
@@ -110,7 +117,7 @@
     </section>
 
     <!--Habilidades-->
-    <section id="habilidades" class="habilidades seccion-clara">
+    <section id="habilidades" class="habilidades seccion-clara decorated-section">
       <div class="container">
         <h2 class="seccion-titulo" data-i18n="skills_title">Habilidades</h2>
 
@@ -167,8 +174,8 @@
 
         <div class="card" data-aos="fade-up">
           <div class="card-body">
-            <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_design_tools">Herramientas de diseño & UX</h3>
-            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_design_tools_text">Recursos para prototipado, investigación y análisis.</p>
+            <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_design_tools">Diseño UI/UX</h3>
+            <p class="card-text" style="font-size: 1.3rem;" data-i18n="skills_design_tools_text">Herramientas para diseño, prototipado, investigación y colaboración.</p>
           </div>
           
           <div class="card-body tech-grid d-flex flex-wrap gap-3 justify-content-center">
@@ -177,8 +184,20 @@
               <span>Figma</span>
             </div>
             <div class="tech-item">
+              <i class="ti ti-palette" style="font-size: 3rem;"></i>
+              <span>Canva</span>
+            </div>
+            <div class="tech-item">
               <i class="ti ti-sitemap" style="font-size: 3rem;"></i>
               <span>Lucidchart</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-scribble" style="font-size: 3rem;"></i>
+              <span>FigJam</span>
+            </div>
+            <div class="tech-item">
+              <i class="ti ti-square-rounded-letter-m" style="font-size: 3rem;"></i>
+              <span>Miro</span>
             </div>
             <div class="tech-item">
               <i class="ti ti-arrow-big-left" style="font-size: 3rem;"></i>
@@ -201,12 +220,13 @@
               <span>Notion</span>
             </div>
             <div class="tech-item">
-              <i class="ti ti-square-rounded-letter-m" style="font-size: 3rem;"></i>
-              <span>Miro</span>
+              <i class="ti ti-layout-kanban" style="font-size: 3rem;"></i>
+              <span>Jira</span>
             </div>
           </div>
         </div>
 
+        <!--
         <div class="card" data-aos="fade-up">
           <div class="card-body">
             <h3 class="card-title" style="font-size: 1.5rem;" data-i18n="skills_dev_tools">Herramientas de desarrollo</h3>
@@ -236,6 +256,7 @@
             </div>
           </div>
         </div>
+      -->
 
         <div class="card" data-aos="fade-up">
           <div class="card-body">
@@ -244,18 +265,20 @@
           </div>
           <div class="card-body d-flex flex-wrap justify-content-center gap-2">
             <span class="skill-badge" data-i18n="skill_teamwork">Trabajo en equipo</span>
-            <span class="skill-badge" data-i18n="skill_ux_research">UX Research</span>
-            <span class="skill-badge" data-i18n="skill_dcu">DCU</span>
-            <span class="skill-badge" data-i18n="skill_design_systems">Design Systems</span>
+            <span class="skill-badge">User Interviews</span>
+            <span class="skill-badge">UX Research</span>
+            <span class="skill-badge">DCU</span>
+            <span class="skill-badge">Design Systems</span>
             <span class="skill-badge" data-i18n="skill_prototyping">Prototipado</span>
-            <span class="skill-badge" data-i18n="skill_wireframing">Wireframing</span>
-            <span class="skill-badge" data-i18n="skill_creativity">Creatividad</span>
+            <span class="skill-badge">Wireframing</span>
+            <span class="skill-badge">Usability Testing</span>
+            <span class="skill-badge" data-i18n="skill_accessibility">Accesibilidad</span>
             <span class="skill-badge" data-i18n="skill_analytical_thinking">Pensamiento analítico</span>
           </div>
         </div>
         </div>
         </div>
-      </div> <!-- Fin container-cards -->
+      </div>
       </div>
     </section>
 
@@ -284,7 +307,7 @@
               <div class="card">
                 <img src="imagenes/proyectos/proyecto2.png" alt="App mantenimiento">
                 <div class="card-body text-center">
-                  <h3 class="card-title" data-i18n="project2_title">App control mantenimientos</h3>
+                  <h3 class="card-title" data-i18n="project2_title">App control mantenimientos.</h3>
                   <p class="card-text text-muted">Ionic 7, TypeScript</p>
                   <a href="https://github.com/WhiteBryz/MantenimientosApp" target="_blank" class="btn btn-dark btn-sm w-100" data-i18n="project_link">Ver código</a>
                 </div>
@@ -370,7 +393,7 @@
     </section>
 
     <!-- Experiencia -->
-    <section id="experiencia" class="experiencia seccion-clara">
+    <section id="experiencia" class="experiencia seccion-clara decorated-section">
       <div class="container">
         <h2 class="seccion-titulo" data-i18n="experience_title">Experiencia</h2>
         
@@ -387,11 +410,19 @@
               <p class="text-muted mb-3" data-i18n="experience3_place1">Nattib | Híbrido (Internship)</p>
               
               <ul style="font-size: 1.1rem; text-align: justify; padding-left: 1.2rem;">
-                <li data-i18n="experience3_text1">Diseño y desarrollo de interfaces responsivas para una plataforma web de salud enfocada en agilizar los flujos de trabajo de médicos residentes en hospitales públicos.</li>  
-                <li data-i18n="experience3_text2">Colaboración en la creación de propuestas de interfaz en Figma, priorizando la experiencia del usuario y la usabilidad.</li> 
-                <li data-i18n="experience3_text3">Propuesta e implementación de mejoras centradas en el usuario para simplificar procesos y reducir la complejidad operativa.</li>
-                <li class="mt-2" data-i18n="experience3_text4">Tecnologías: <strong>React + Vite, Bootstrap 5.3.</strong> / Diseño: <strong>Figma.</strong></li>
+                <li data-i18n="experience3_text1">Análisis de requerimientos para comprender las necesidades de médicos residentes y apoyar la definición de la experiencia de usuario.</li>  
+                <li data-i18n="experience3_text2">Diseño de user flows, wireframes y prototipos interactivos en Figma.</li> 
+                <li data-i18n="experience3_text3">Creación y mantenimiento de componentes reutilizables para garantizar consistencia en el desarrollo de la plataforma web.</li>
+                <li class="mt-2" data-i18n="experience3_text4">Tecnologías: <strong>React + Vite, Bootstrap 5.3.</strong> / Diseño: <strong>Figma y FigJam.</strong></li>
               </ul>
+
+              <div class="project-gallery">
+                <div class="project-image">
+                  <img src="imagenes/experiencia/nattibHealth.png" alt="">
+                  <span>Nattib Health</span>
+                </div>
+              </div>
+
               <div class="d-flex mt-3">
                 <a href="https://dailhu.com/login" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
                   Nattib Health <i class="ti ti-stethoscope" ms-1"></i>
@@ -412,6 +443,18 @@
               <p style="font-size: 1.1rem; text-align: justify;" data-i18n="experience2_text1">
                 Voluntaria encargada de la gestión de redes sociales y creación de contenido digital, diseñando estrategias para aumentar el alcance del proyecto y fomentar el interés de jóvenes mujeres (14-18 años) en la programación y la tecnología.
               </p>
+
+              <div class="project-gallery">
+                <div class="project-image">
+                  <img src="imagenes/experiencia/proyectoADA01.jpeg" alt="">
+                </div>
+
+                <div class="project-image">
+                  <img src="imagenes/experiencia/proyectoADA03.jpg" alt="">
+                </div>
+
+              </div>
+
               <div class="d-flex mt-3">
                 <a href="https://www.instagram.com/proyecto.ada/" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
                   Instagram ADA <i class="ti ti-brand-instagram ms-1"></i>
@@ -431,10 +474,22 @@
               <p class="text-muted mb-3" data-i18n="experience1_place1">CENEDIC UDC | Presencial</p>
               
               <ul style="font-size: 1.1rem; text-align: justify; padding-left: 1.2rem;">
-                <li data-i18n="experience1_text1">Capacitación en herramientas de desarrollo front-end, incluyendo <strong>React</strong> y <strong>Bootstrap 5.0</strong>, así como control de versiones básico con <strong>GitHub.</strong></li> 
-                <li data-i18n="experience1_text2">Diseño y propuesta de mejoras para los módulos institucionales utilizando <strong>Figma</strong>, con enfoque en la usabilidad y consistencia visual.</li> 
-                <li data-i18n="experience1_text3">Desarrollo de alternativas de diseño orientadas a mejorar la experiencia del usuario y facilitar la interacción con el sistema.</li>
+                <li data-i18n="experience1_text1">Rediseño de módulos institucionales mediante <strong>Figma</strong> con enfoque en usabilidad y diseño centrado en el usuario.</li> 
+                <li data-i18n="experience1_text2">Elaboración de wireframes y prototipos interactivos para validar propuestas de diseño.</li>
+                <li data-i18n="experience1_text3">Capacitación en herramientas de desarrollo front-end, incluyendo <strong>React</strong> y <strong>Bootstrap 5.0</strong>, así como control de versiones básico con <strong>GitHub.</strong></li> 
               </ul>
+
+              <div class="project-gallery">
+                <div class="project-image">
+                  <img src="imagenes/experiencia/portafolioUdc.png" alt="">
+                  <span data-i18n="project_exp_name2">Portafolio UDC</span>
+                </div>
+              
+                <div class="project-image">
+                  <img src="imagenes/experiencia/carreraFeuc.png" alt="">
+                  <span data-i18n="project_exp_name3">Carrera FEUC</span>
+                </div>
+              </div>
 
               <div class="d-flex flex-wrap gap-2 mt-3">
                 <a href="https://www.figma.com/proto/lAg40jdy4PpJOVFD2LSGkv/Propuesta-portafolio?node-id=2-144&p=f&t=SVhDVIKC1vlhjdjk-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill">
@@ -461,7 +516,7 @@
           <div class="accordion-item">
             <h3 class="accordion-header" id="headingEdu1">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edu1" aria-expanded="false" aria-controls="edu1" style="font-size: 1.3rem">
-                <strong data-i18n="education_degree">Ingeniería de Software (UDC)</strong>
+                <strong data-i18n="education_degree">Ingeniería de Software</strong>
               </button>
             </h4>
             <div id="edu1" class="accordion-collapse collapse" aria-labelledby="headingEdu1" data-bs-parent="#educacionAccordion">
@@ -492,9 +547,11 @@
             <a href="mailto:natt0iglesias@gmail.com" aria-label="Correo electrónico">
               <i class="ti ti-mail" style="font-size: 2.5rem;"></i>
             </a>
+            <!--
             <a href="" target="_blank" aria-label="Currículum" data-i18n-link="cv_link">
               <i class="ti ti-file" style="font-size: 2.5rem;"></i>
             </a>
+            -->
           </div>
         </div>
       </div>
@@ -506,7 +563,7 @@
 
     <!--Pie de página-->
     <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center"> 
-      <img class="footer-logo" src="imagenes/milo-icon.png" alt="Logo del portafolio">
+      <!--<img class="footer-logo" src="imagenes/milo-icon.png" alt="Logo del portafolio"> -->
     </footer>
     
     <!--Scripts-->

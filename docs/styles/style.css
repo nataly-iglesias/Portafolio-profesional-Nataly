@@ -201,8 +201,15 @@ h1 {
 
 /* Sección: Habilidades */
 #habilidades {
+  position: relative;
   padding: 3rem;
   text-align: center;
+  overflow: hidden;
+}
+
+#habilidades .container {
+  position: relative;
+  z-index: 1;
 }
 
 .tech-grid {
@@ -325,13 +332,18 @@ h1 {
   color: #53623b;
   transform: translateX(-50%);
   z-index: 1;
+  transition:.3s;
+}
+
+.timeline-item:hover .timeline-icon{
+  transform:translateX(-50%) scale(1.2);
 }
 
 .timeline-card {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
   border-left: 5px solid #53623b;
   transition:
     transform 0.3s ease,
@@ -366,21 +378,52 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.project-gallery {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1rem;
+  margin-top:1.5rem;
+}
+
+.project-image {
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  border:2px solid #aeaeae4d;
+}
+
+.project-image img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  display:block;
+}
+
+.project-image span {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:.5rem;
+  background:rgba(56, 56, 56, 0.65);
+  color:white;
+  text-align:center;
+  font-size:.9rem;
+}
+
+
 /*Tarjetas*/
 .container-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   width: 100%;
+  align-items: stretch;
 }
 
 .container-cards .card {
-  flex: 1 1 300px;
-  max-width: 400px;
   width: 100%;
+  max-width: none;
   margin-bottom: 0;
   height: 100%;
   display: flex;
@@ -397,7 +440,8 @@ h1 {
   border: 2px solid #5756564d;
   box-shadow: 0px 4px 8px 0px #0000001a;
   transition: all 0.2s ease-in;
-  background-color: white;
+  background-color: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
 }
 
 .card-featured {
@@ -554,7 +598,8 @@ h1 {
 
 /* Sección: Pie de pagina (footer) */
 footer {
-  min-height: 500px;
+  /*min-height: 500px;*/
+  min-height: 250px;
   padding-top: 80px;
 }
 
@@ -572,16 +617,92 @@ footer {
   font-family: "Quicksand", sans-serif;
 }
 
-/* Adaptable (Responsivo) */
-@media (min-width: 1200px) {
-  .container-cards {
-    grid-template-columns: repeat(4, 1fr);
+
+/* Sección decorada */
+.decorated-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.decorated-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(circle, #6a8058 4px, transparent 3px);
+
+  background-size: 50px 50px;
+  opacity: 0.15;
+  animation: sparkle 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.decorated-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes sparkle {
+  0%,100% {
+    opacity: 0.10;
+  }
+  50% {
+    opacity: 0.25;
   }
 }
 
+/* Stickers flotantes */
+.sticker {
+  position:absolute;
+  width: 120px;
+  height: 120px;
+  animation: float 4s ease-in-out infinite;
+  z-index:5;
+}
+
+.sticker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sticker-coffee {
+  top:5%;
+  left:10%;
+  transform:rotate(-15deg);
+}
+
+.sticker-computer {
+  top:30%;
+  right:12%;
+  animation-delay:1s;
+}
+
+@keyframes float {
+  0%,100%{
+    transform:translateY(0) rotate(-10deg);
+  }
+  50%{
+    transform:translateY(-20px) rotate(10deg);
+  }
+}
+
+
+/* Adaptable (Responsivo) */
 @media (max-width: 1200px) {
+  .container-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .proyectos-grid {
     column-count: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-cards {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -631,12 +752,15 @@ footer {
     position: absolute;
     font-size: 12vw;
     font-weight: 900;
-    color: #545251;
-    opacity: 0.25;
     top: 5%; /* Ajustar la posición del texto de fondo para que no empuje tanto el contenido */
     text-align: center;
     width: 100%;
     letter-spacing: 10px;
+  }
+
+  /* Ocultar stickers flotantes en móviles */
+  .sticker {
+    display: none;
   }
 
   /* Ajustes para los títulos de la sección de Proyectos en móviles */
@@ -654,6 +778,17 @@ footer {
     margin-left: auto; /* Centra el icono */
     margin-right: auto; /* Centra el icono */
   }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image img {
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+  }
+
 
   .sticky-title {
     position: static !important; /* Desactiva el comportamiento sticky en móviles */
